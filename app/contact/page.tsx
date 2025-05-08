@@ -1,6 +1,6 @@
-import Head from "next/head";
+
 import Script from "next/script";
-import Navbar from "../component/Navbar";
+
 
 const Contact = () => {
   return (

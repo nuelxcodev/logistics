@@ -1,5 +1,3 @@
-import Footer from "./component/Footer";
-import Navbar from "./component/Navbar";
 
 export default async function Home() {
   return (
@@ -101,10 +99,10 @@ export default async function Home() {
               <div className="bg-primary py-5 px-4 px-sm-5">
                 <form className="py-5">
                   <div className="form-group">
-                    <input type="text" className="form-control border-0 p-4" placeholder="Your Name" required="required" />
+                    <input type="text" className="form-control border-0 p-4" placeholder="Your Name" required />
                   </div>
                   <div className="form-group">
-                    <input type="email" className="form-control border-0 p-4" placeholder="Your Email" required="required" />
+                    <input type="email" className="form-control border-0 p-4" placeholder="Your Email" required />
                   </div>
                   <div className="form-group">
                     <select className="custom-select border-0 px-4" style={{ height: 47 }}>
