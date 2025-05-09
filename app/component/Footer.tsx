@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="col-lg-7 col-md-6">
             <div className="row">
               <div className="col-md-6 mb-5">
-                <h3 className="text-primary mb-4">Get In Touch</h3>
+                <h3 className="text-primary mb-4">Contact Us</h3>
                 <p>
                   <i className="fa fa-map-marker-alt mr-2" />
                   123 Street, New York, USA
@@ -50,25 +50,24 @@ const Footer = () => {
                   </Link>
                   <Link className="text-white mb-2" href="#">
                     <i className="fa fa-angle-right mr-2" />
-                    Our Services
+                    Services
                   </Link>
                   <Link className="text-white mb-2" href="#">
                     <i className="fa fa-angle-right mr-2" />
-                    Pricing Plan
+                    Pricing
                   </Link>
                   <a className="text-white" href="#">
                     <i className="fa fa-angle-right mr-2" />
-                    Contact Us
+                    Contact
                   </a>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-lg-5 col-md-6 mb-5">
-            <h3 className="text-primary mb-4">Newsletter</h3>
+            <h3 className="text-primary mb-4">Subscribe to Our Newsletter</h3>
             <p>
-              Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo
-              eirmod sea justo no lorem est diam
+              Stay updated with the latest news and offers. Subscribe to receive insights, updates, and special promotions straight to your inbox.
             </p>
             <div className="w-100">
               <div className="input-group">
@@ -85,21 +84,20 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-6 text-center text-md-left mb-3 mb-md-0">
             <p className="m-0 text-white">
-              © <a href="#">Your Site Name</a>. All Rights Reserved.
-              {/*/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. *** /*/}
-              Designed by <a href="https://chukkwuemeka-ekine.vercel.app">nuelcodex</a>
+              © <a href="#">Your Site Name</a>. All rights reserved.
+              Designed by <a href="https://chukwuemeka-ekine.vercel.app">nuelcodex</a>
             </p>
           </div>
           <div className="col-lg-6 text-center text-md-right">
             <ul className="nav d-inline-flex">
               <li className="nav-item">
                 <a className="nav-link text-white py-0" href="#">
-                  Privacy
+                  Privacy Policy
                 </a>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white py-0" href="#">
-                  Terms
+                  Terms of Service
                 </Link>
               </li>
               <li className="nav-item">
@@ -109,7 +107,7 @@ const Footer = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white py-0" href="#">
-                  Help
+                  Support
                 </Link>
               </li>
             </ul>

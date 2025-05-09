@@ -1,75 +1,57 @@
-"use client"
+"use client";
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { PaperAirplaneIcon, TruckIcon, BoltIcon } from '@heroicons/react/24/outline';
-import { FunctionComponent, SVGProps } from 'react';
 
-type Service = {
-  icon: FunctionComponent<SVGProps<SVGSVGElement>>;
-  titleKey: string;
-  descriptionKey: string;
-  featuresKey: string;
-};
+const serviceData = [
+  {
+    icon: "fa-plane",
+    title: "Air Freight",
+    description:
+      "We provide fast and reliable air cargo services, ensuring your goods reach their destination quickly and safely across international skies.",
+  },
+  {
+    icon: "fa-ship",
+    title: "Ocean Freight",
+    description:
+      "Our ocean freight solutions offer cost-effective and secure transportation for large volumes of goods across global sea routes.",
+  },
+  {
+    icon: "fa-truck",
+    title: "Land Transport",
+    description:
+      "We offer dependable road transport services for regional and cross-border deliveries, ensuring timely and secure movement of cargo.",
+  },
+  {
+    icon: "fa-store",
+    title: "Cargo Storage",
+    description:
+      "Our secure and spacious warehouses provide flexible storage solutions for goods of all sizes, with full inventory tracking and handling.",
+  },
+];
 
 const Services: React.FC = () => {
-  const { t } = useTranslation();
-
-  const services: Service[] = [
-    {
-      icon: PaperAirplaneIcon,
-      titleKey: 'airFreight',
-      descriptionKey: 'airFreight_desc',
-      featuresKey: 'airFreight_features',
-    },
-    {
-      icon: TruckIcon,
-      titleKey: 'groundShipping',
-      descriptionKey: 'groundShipping_desc',
-      featuresKey: 'groundShipping_features',
-    },
-    {
-      icon: BoltIcon,
-      titleKey: 'expressDelivery',
-      descriptionKey: 'expressDelivery_desc',
-      featuresKey: 'expressDelivery_features',
-    },
-  ];
-
   return (
-    <section className="py-20 px-2 sm:px-8 md:px-12 lg:px-20 text-[#0a192f]" id="services">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center mb-16 tracking-tight">
-          {t('ourServices')}
-        </h2>
-
-        <div className="grid gap-10 md:grid-cols-3 p-[20px]">
-          {services.map(({ icon: Icon, titleKey, descriptionKey, featuresKey }, idx) => {
-            const features: string[] = t(featuresKey, { returnObjects: true }) as string[];
-
-            return (
-              <div
-                key={idx}
-                className="bg-[#f9fafb] border border-gray-200 shadow-md hover:shadow-xl transition-shadow duration-300 rounded-2xl p-10 flex flex-col items-center text-center"
-              >
-                <div className="flex items-center justify-center w-16 h-16 bg-[#fee2e2] rounded-full mb-6">
-                  <Icon className="w-8 h-8 text-[#e11d48]" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">{t(titleKey)}</h3>
-                <p className="text-gray-600 mb-5 px-2">{t(descriptionKey)}</p>
-                <ul className="text-sm text-gray-800 space-y-2 text-left w-full max-w-xs mx-auto">
-                  {features.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <span className="w-2 h-2 mt-2 bg-[#e11d48] rounded-full shrink-0"></span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+    <div className="container-fluid pt-5">
+      <div className="container">
+        <div className="text-center pb-2">
+          <h6 className="text-primary text-uppercase font-weight-bold">Our Services</h6>
+          <h1 className="mb-4">Best Logistic Services</h1>
+        </div>
+        <div className="row pb-3">
+          {serviceData.map((service, index) => (
+            <div key={index} className="col-lg-3 col-md-6 text-center mb-5">
+              <div className="d-flex align-items-center justify-content-center bg-primary mb-3 p-3">
+                <i className={`fa fa-2x ${service.icon} text-dark pr-3`} />
+                <h6 className="text-white font-weight-medium m-0">{service.title}</h6>
               </div>
-            );
-          })}
+              <p>{service.description}</p>
+              <a className="border-bottom text-decoration-none" href="">
+                Read More
+              </a>
+            </div>
+          ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

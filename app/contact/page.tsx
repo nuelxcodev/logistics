@@ -1,7 +1,4 @@
 
-import Script from "next/script";
-
-
 const Contact = () => {
   return (
     <>
@@ -129,15 +126,6 @@ const Contact = () => {
         <i className="fa fa-angle-double-up" />
       </a>
       {/* JavaScript Libraries */}
-      <Script src="https://code.jquery.com/jquery-3.4.1.min.js"></Script>
-      <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></Script>
-      <Script src="lib/easing/easing.min.js"></Script>
-      <Script src="lib/waypoints/waypoints.min.js"></Script>
-      <Script src="lib/counterup/counterup.min.js"></Script>
-      <Script src="lib/owlcarousel/owl.carousel.min.js"></Script>
-      <Script src="mail/jqBootstrapValidation.min.js"></Script>
-      <Script src="mail/contact.js"></Script>
-      <Script src="js/main.js"></Script>
     </>
   );
 };

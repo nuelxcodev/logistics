@@ -1,3 +1,5 @@
+import Services from "./component/Services";
+import TestimonialSlider from "./component/TestimonialSlider";
 
 export default async function Home() {
   return (
@@ -34,7 +36,7 @@ export default async function Home() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-5 pb-4 pb-lg-0">
-              <img className="img-fluid w-100" src="img/about.jpg" alt="" />
+              <img className="img-fluid w-100" src="img/about.jpg" alt="Logistics Service" />
               <div className="bg-primary text-dark text-center p-4">
                 <h3 className="m-0">25+ Years Experience</h3>
               </div>
@@ -43,8 +45,9 @@ export default async function Home() {
               <h6 className="text-primary text-uppercase font-weight-bold">About Us</h6>
               <h1 className="mb-4">Trusted &amp; Faster Logistic Service Provider</h1>
               <p className="mb-4">
-                Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet
-                dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo
+                With over 25 years of experience, we deliver reliable and efficient logistics solutions tailored to meet the needs of modern
+                businesses. From timely freight delivery to supply chain optimization, our commitment to speed, safety, and customer satisfaction
+                sets us apart in the logistics industry. Trust us to move your goods with precision and care—every time.
               </p>
               <div className="d-flex align-items-center pt-2">
                 <button
@@ -62,6 +65,7 @@ export default async function Home() {
           </div>
         </div>
       </div>
+
       {/* About End */}
       {/*  Quote Request Start */}
       <div className="container-fluid bg-secondary my-5">
@@ -125,56 +129,7 @@ export default async function Home() {
       </div>
       {/* Quote Request Start */}
       {/* Services Start */}
-      <div className="container-fluid pt-5">
-        <div className="container">
-          <div className="text-center pb-2">
-            <h6 className="text-primary text-uppercase font-weight-bold">Our Services</h6>
-            <h1 className="mb-4">Best Logistic Services</h1>
-          </div>
-          <div className="row pb-3">
-            <div className="col-lg-3 col-md-6 text-center mb-5">
-              <div className="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
-                <i className="fa fa-2x fa-plane text-dark pr-3" />
-                <h6 className="text-white font-weight-medium m-0">Air Freight</h6>
-              </div>
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet diam sea est diam</p>
-              <a className="border-bottom text-decoration-none" href="">
-                Read More
-              </a>
-            </div>
-            <div className="col-lg-3 col-md-6 text-center mb-5">
-              <div className="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
-                <i className="fa fa-2x fa-ship text-dark pr-3" />
-                <h6 className="text-white font-weight-medium m-0">Ocean Freight</h6>
-              </div>
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet diam sea est diam</p>
-              <a className="border-bottom text-decoration-none" href="">
-                Read More
-              </a>
-            </div>
-            <div className="col-lg-3 col-md-6 text-center mb-5">
-              <div className="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
-                <i className="fa fa-2x fa-truck text-dark pr-3" />
-                <h6 className="text-white font-weight-medium m-0">Land Transport</h6>
-              </div>
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet diam sea est diam</p>
-              <a className="border-bottom text-decoration-none" href="">
-                Read More
-              </a>
-            </div>
-            <div className="col-lg-3 col-md-6 text-center mb-5">
-              <div className="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
-                <i className="fa fa-2x fa-store text-dark pr-3" />
-                <h6 className="text-white font-weight-medium m-0">Cargo Storage</h6>
-              </div>
-              <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet diam sea est diam</p>
-              <a className="border-bottom text-decoration-none" href="">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Services />
       {/* Services End */}
       {/* Features Start */}
       <div className="container-fluid bg-secondary my-5">
@@ -187,26 +142,27 @@ export default async function Home() {
               <h6 className="text-primary text-uppercase font-weight-bold">Why Choose Us</h6>
               <h1 className="mb-4">Faster, Safe and Trusted Logistics Services</h1>
               <p className="mb-4">
-                Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet
-                dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo
+                Our logistics services are designed to deliver speed, safety, and reliability every time. We guarantee faster delivery with a
+                commitment to secure handling of your packages. Whether it’s a regular shipment or an urgent delivery, we have the expertise and
+                technology to ensure your packages reach their destination on time, every time.
               </p>
               <ul className="list-inline">
                 <li>
                   <h6>
                     <i className="far fa-dot-circle text-primary mr-3" />
-                    Best In Industry
+                    Industry-Leading Speed
                   </h6>
                 </li>
                 <li>
                   <h6>
                     <i className="far fa-dot-circle text-primary mr-3" />
-                    Emergency Services
+                    Safe and Secure Handling
                   </h6>
                 </li>
                 <li>
                   <h6>
                     <i className="far fa-dot-circle text-primary mr-3" />
-                    24/7 Customer Support
+                    24/7 Reliable Customer Support
                   </h6>
                 </li>
               </ul>
@@ -217,64 +173,11 @@ export default async function Home() {
           </div>
         </div>
       </div>
+
       {/* Features End */}
 
-      {/* Testimonial Start */}
-      <div className="container-fluid py-5">
-        <div className="container">
-          <div className="text-center pb-2">
-            <h6 className="text-primary text-uppercase font-weight-bold">Testimonial</h6>
-            <h1 className="mb-4">Our Clients Say</h1>
-          </div>
-          <div className="owl-carousel testimonial-carousel">
-            <div className="position-relative bg-secondary p-4">
-              <i className="fa fa-3x fa-quote-right text-primary position-absolute" style={{ top: "-6px", right: 0 }} />
-              <div className="d-flex align-items-center mb-3">
-                <img className="img-fluid rounded-circle" src="img/testimonial-1.jpg" style={{ width: 60, height: 60 }} alt="" />
-                <div className="ml-3">
-                  <h6 className="font-weight-semi-bold m-0">Client Name</h6>
-                  <small>- Profession</small>
-                </div>
-              </div>
-              <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita lorem. Dolor ipsum sanct clita</p>
-            </div>
-            <div className="position-relative bg-secondary p-4">
-              <i className="fa fa-3x fa-quote-right text-primary position-absolute" style={{ top: "-6px", right: 0 }} />
-              <div className="d-flex align-items-center mb-3">
-                <img className="img-fluid rounded-circle" src="img/testimonial-2.jpg" style={{ width: 60, height: 60 }} alt="" />
-                <div className="ml-3">
-                  <h6 className="font-weight-semi-bold m-0">Client Name</h6>
-                  <small>- Profession</small>
-                </div>
-              </div>
-              <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita lorem. Dolor ipsum sanct clita</p>
-            </div>
-            <div className="position-relative bg-secondary p-4">
-              <i className="fa fa-3x fa-quote-right text-primary position-absolute" style={{ top: "-6px", right: 0 }} />
-              <div className="d-flex align-items-center mb-3">
-                <img className="img-fluid rounded-circle" src="img/testimonial-3.jpg" style={{ width: 60, height: 60 }} alt="" />
-                <div className="ml-3">
-                  <h6 className="font-weight-semi-bold m-0">Client Name</h6>
-                  <small>- Profession</small>
-                </div>
-              </div>
-              <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita lorem. Dolor ipsum sanct clita</p>
-            </div>
-            <div className="position-relative bg-secondary p-4">
-              <i className="fa fa-3x fa-quote-right text-primary position-absolute" style={{ top: "-6px", right: 0 }} />
-              <div className="d-flex align-items-center mb-3">
-                <img className="img-fluid rounded-circle" src="img/testimonial-4.jpg" style={{ width: 60, height: 60 }} alt="" />
-                <div className="ml-3">
-                  <h6 className="font-weight-semi-bold m-0">Client Name</h6>
-                  <small>- Profession</small>
-                </div>
-              </div>
-              <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita lorem. Dolor ipsum sanct clita</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Testimonial End */}
+      <TestimonialSlider />
+
       {/* Blog Start */}
       <div className="container-fluid pt-5">
         <div className="container">
@@ -305,14 +208,15 @@ export default async function Home() {
                   <div className="d-flex align-items-center ml-4">
                     <i className="far fa-bookmark text-primary" />
                     <a className="text-muted ml-2" href="">
-                      Web Design
+                      Logistics
                     </a>
                   </div>
                 </div>
-                <h4 className="font-weight-bold mb-3">Kasd tempor diam sea justo dolor</h4>
+                <h4 className="font-weight-bold mb-3">The Future of Logistics: Innovation and Trends</h4>
                 <p>
-                  Dolor sea ipsum ipsum et. Erat duo lorem magna vero dolor dolores. Rebum eirmod no dolor diam dolor amet ipsum. Lorem lorem sea
-                  sed diam est lorem magna
+                  The logistics industry is rapidly evolving with advancements in technology, automation, and data analytics. In this post, we
+                  explore the future of logistics, from AI-powered tracking systems to the rise of drones and autonomous vehicles in delivery
+                  services. Learn how these innovations are shaping the way we move goods and enhancing efficiency.
                 </p>
                 <a className="border-bottom border-primary text-uppercase text-decoration-none" href="">
                   Read More <i className="fa fa-angle-right" />
@@ -326,8 +230,8 @@ export default async function Home() {
                   className="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
                   style={{ width: 60, height: 60, bottom: "-30px", right: 30 }}
                 >
-                  <h4 className="font-weight-bold mb-n1">01</h4>
-                  <small className="text-white text-uppercase">Jan</small>
+                  <h4 className="font-weight-bold mb-n1">02</h4>
+                  <small className="text-white text-uppercase">Feb</small>
                 </div>
               </div>
               <div className="bg-secondary" style={{ padding: 30 }}>
@@ -335,20 +239,21 @@ export default async function Home() {
                   <div className="d-flex align-items-center">
                     <img className="rounded-circle" style={{ width: 40, height: 40 }} src="img/user.jpg" alt="user" />
                     <a className="text-muted ml-2" href="">
-                      John Doe
+                      Jane Smith
                     </a>
                   </div>
                   <div className="d-flex align-items-center ml-4">
                     <i className="far fa-bookmark text-primary" />
                     <a className="text-muted ml-2" href="">
-                      Web Design
+                      Delivery Services
                     </a>
                   </div>
                 </div>
-                <h4 className="font-weight-bold mb-3">Kasd tempor diam sea justo dolor</h4>
+                <h4 className="font-weight-bold mb-3">How to Ensure Safe and Timely Deliveries</h4>
                 <p>
-                  Dolor sea ipsum ipsum et. Erat duo lorem magna vero dolor dolores. Rebum eirmod no dolor diam dolor amet ipsum. Lorem lorem sea
-                  sed diam est lorem magna
+                  In the fast-paced world of logistics, ensuring that goods are delivered on time and in perfect condition is a top priority.
+                  This blog post highlights best practices for safe and timely deliveries, from packaging and route planning to communication
+                  with customers. Discover how our delivery experts maintain the highest standards in the industry.
                 </p>
                 <a className="border-bottom border-primary text-uppercase text-decoration-none" href="">
                   Read More <i className="fa fa-angle-right" />
@@ -358,8 +263,9 @@ export default async function Home() {
           </div>
         </div>
       </div>
+
       {/* Blog End */}
-    
+
       {/* Back to Top */}
       <a href="#" className="btn btn-lg btn-primary back-to-top">
         <i className="fa fa-angle-double-up" />
