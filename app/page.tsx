@@ -1,21 +1,24 @@
-import Services from "./component/Services";
+import Services from "./component/ui/Services";
 import TestimonialSlider from "./component/TestimonialSlider";
+import AboutUscard from "./component/ui/AboutUscard";
+import WhyUscard from "./component/ui/WhyUscard";
+import Quoter from "./component/ui/Quoter";
 
 export default async function Home() {
   return (
     <>
-      <meta charSet="utf-8" />
-      <title>FASTER - Logistics Company Website Template</title>
-      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-      <meta content="Free HTML Templates" name="keywords" />
-      <meta content="Free HTML Templates" name="description" />
-      <link href="img/favicon.ico" rel="icon" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-      <link href="css/style.css" rel="stylesheet" />
-      {/* Header Start */}
+      <head>
+        <meta charSet="utf-8" />
+        <title>FASTER - Logistics Company Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="Free HTML Templates" name="keywords" />
+        <meta content="Free HTML Templates" name="description" />
+        <link href="img/favicon.ico" rel="icon" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+      </head>
+
       <div className="jumbotron jumbotron-fluid mb-5">
         <div className="container text-center py-5">
           <h1 className="text-primary mb-4">Safe &amp; Faster</h1>
@@ -30,152 +33,12 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      {/* Header End */}
+
       {/* About Start */}
-      <div className="container-fluid py-5">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-5 pb-4 pb-lg-0">
-              <img className="img-fluid w-100" src="img/about.jpg" alt="Logistics Service" />
-              <div className="bg-primary text-dark text-center p-4">
-                <h3 className="m-0">25+ Years Experience</h3>
-              </div>
-            </div>
-            <div className="col-lg-7">
-              <h6 className="text-primary text-uppercase font-weight-bold">About Us</h6>
-              <h1 className="mb-4">Trusted &amp; Faster Logistic Service Provider</h1>
-              <p className="mb-4">
-                With over 25 years of experience, we deliver reliable and efficient logistics solutions tailored to meet the needs of modern
-                businesses. From timely freight delivery to supply chain optimization, our commitment to speed, safety, and customer satisfaction
-                sets us apart in the logistics industry. Trust us to move your goods with precision and care—every time.
-              </p>
-              <div className="d-flex align-items-center pt-2">
-                <button
-                  type="button"
-                  className="btn-play"
-                  data-toggle="modal"
-                  data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-                  data-target="#videoModal"
-                >
-                  <span />
-                </button>
-                <h5 className="font-weight-bold m-0 ml-4">Play Video</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* About End */}
-      {/*  Quote Request Start */}
-      <div className="container-fluid bg-secondary my-5">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-7 py-5 py-lg-0">
-              <h6 className="text-primary text-uppercase font-weight-bold">Get A Quote</h6>
-              <h1 className="mb-4">Request A Free Quote</h1>
-              <p className="mb-4">
-                Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet
-                dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo
-              </p>
-              <div className="row">
-                <div className="col-sm-4">
-                  <h1 className="text-primary mb-2" data-toggle="counter-up">
-                    225
-                  </h1>
-                  <h6 className="font-weight-bold mb-4">SKilled Experts</h6>
-                </div>
-                <div className="col-sm-4">
-                  <h1 className="text-primary mb-2" data-toggle="counter-up">
-                    1050
-                  </h1>
-                  <h6 className="font-weight-bold mb-4">Happy Clients</h6>
-                </div>
-                <div className="col-sm-4">
-                  <h1 className="text-primary mb-2" data-toggle="counter-up">
-                    2500
-                  </h1>
-                  <h6 className="font-weight-bold mb-4">Complete Projects</h6>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-5">
-              <div className="bg-primary py-5 px-4 px-sm-5">
-                <form className="py-5">
-                  <div className="form-group">
-                    <input type="text" className="form-control border-0 p-4" placeholder="Your Name" required />
-                  </div>
-                  <div className="form-group">
-                    <input type="email" className="form-control border-0 p-4" placeholder="Your Email" required />
-                  </div>
-                  <div className="form-group">
-                    <select className="custom-select border-0 px-4" style={{ height: 47 }}>
-                      <option>Select A Service</option>
-                      <option value={1}>Service 1</option>
-                      <option value={2}>Service 1</option>
-                      <option value={3}>Service 1</option>
-                    </select>
-                  </div>
-                  <div>
-                    <button className="btn btn-dark btn-block border-0 py-3" type="submit">
-                      Get A Quote
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Quote Request Start */}
-      {/* Services Start */}
+      <AboutUscard />
+      <Quoter />
       <Services />
-      {/* Services End */}
-      {/* Features Start */}
-      <div className="container-fluid bg-secondary my-5">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-5">
-              <img className="img-fluid w-100" src="img/feature.jpg" alt="" />
-            </div>
-            <div className="col-lg-7 py-5 py-lg-0">
-              <h6 className="text-primary text-uppercase font-weight-bold">Why Choose Us</h6>
-              <h1 className="mb-4">Faster, Safe and Trusted Logistics Services</h1>
-              <p className="mb-4">
-                Our logistics services are designed to deliver speed, safety, and reliability every time. We guarantee faster delivery with a
-                commitment to secure handling of your packages. Whether it’s a regular shipment or an urgent delivery, we have the expertise and
-                technology to ensure your packages reach their destination on time, every time.
-              </p>
-              <ul className="list-inline">
-                <li>
-                  <h6>
-                    <i className="far fa-dot-circle text-primary mr-3" />
-                    Industry-Leading Speed
-                  </h6>
-                </li>
-                <li>
-                  <h6>
-                    <i className="far fa-dot-circle text-primary mr-3" />
-                    Safe and Secure Handling
-                  </h6>
-                </li>
-                <li>
-                  <h6>
-                    <i className="far fa-dot-circle text-primary mr-3" />
-                    24/7 Reliable Customer Support
-                  </h6>
-                </li>
-              </ul>
-              <a href="" className="btn btn-primary mt-3 py-2 px-4">
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Features End */}
-
+      <WhyUscard />
       <TestimonialSlider />
 
       {/* Blog Start */}
@@ -188,7 +51,7 @@ export default async function Home() {
           <div className="row">
             <div className="col-md-6 mb-5">
               <div className="position-relative">
-                <img className="img-fluid w-100" src="img/blog-1.jpg" alt="" />
+                <img className="img-fluid w-100" src="img/blog-1.jpg" alt="Blog Post 1" />
                 <div
                   className="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
                   style={{ width: 60, height: 60, bottom: "-30px", right: 30 }}
@@ -200,7 +63,7 @@ export default async function Home() {
               <div className="bg-secondary" style={{ padding: 30 }}>
                 <div className="d-flex mb-3">
                   <div className="d-flex align-items-center">
-                    <img className="rounded-circle" style={{ width: 40, height: 40 }} src="img/user.jpg" alt="user" />
+                    <img className="rounded-circle" style={{ width: 40, height: 40 }} src="img/user.jpg" alt="John Doe" />
                     <a className="text-muted ml-2" href="">
                       John Doe
                     </a>
@@ -225,7 +88,7 @@ export default async function Home() {
             </div>
             <div className="col-md-6 mb-5">
               <div className="position-relative">
-                <img className="img-fluid w-100" src="img/blog-2.jpg" alt="user" />
+                <img className="img-fluid w-100" src="img/blog-2.jpg" alt="Blog Post 2" />
                 <div
                   className="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
                   style={{ width: 60, height: 60, bottom: "-30px", right: 30 }}
@@ -237,7 +100,7 @@ export default async function Home() {
               <div className="bg-secondary" style={{ padding: 30 }}>
                 <div className="d-flex mb-3">
                   <div className="d-flex align-items-center">
-                    <img className="rounded-circle" style={{ width: 40, height: 40 }} src="img/user.jpg" alt="user" />
+                    <img className="rounded-circle" style={{ width: 40, height: 40 }} src="img/user.jpg" alt="Jane Smith" />
                     <a className="text-muted ml-2" href="">
                       Jane Smith
                     </a>
