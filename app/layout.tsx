@@ -57,7 +57,6 @@ export const metadata: Metadata = {
 export default function LocaleLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      
       <body>
         <Navbar />
         <main>{children}</main>
