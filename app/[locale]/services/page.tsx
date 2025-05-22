@@ -3,7 +3,7 @@ import Services from "../component/ui/Services";
 import Quoter from "../component/ui/Quoter";
 import TestimonialSlider from "../component/TestimonialSlider";
 import { getDictionary } from "@/libs/i18n/getDictionary";
-import type { Locale } from "@/libs/i18n/config";
+import { locales, type Locale } from "@/libs/i18n/config";
 
 export default async function ServicesPage({ params }: { params: { locale: Locale } }) {
   const dict = await getDictionary(params.locale);
@@ -34,4 +34,8 @@ export default async function ServicesPage({ params }: { params: { locale: Local
       </a>
     </>
   );
+}
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
 }

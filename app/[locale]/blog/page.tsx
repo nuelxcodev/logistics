@@ -1,9 +1,9 @@
-import type { Locale } from "@/libs/i18n/config";
+import { locales, type Locale } from "@/libs/i18n/config";
 import { getDictionary } from "@/libs/i18n/getDictionary";
 import React from "react";
 
 async function BlogPage({ params }: { params: { locale: Locale } }) {
-   const {locale} = await params;
+   const {locale} = params;
   const dict = await getDictionary(locale);
   return (
     <>
@@ -333,3 +333,8 @@ async function BlogPage({ params }: { params: { locale: Locale } }) {
 }
 
 export default BlogPage;
+
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
