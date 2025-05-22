@@ -1,29 +1,39 @@
-
 import { Metadata } from "next";
 import { ReactNode } from "react";
-
 import Script from "next/script";
+
 import "./globals.css";
 import "@/public/css/style.min.css";
 import "@/public/lib/owlcarousel/assets/owl.carousel.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+
 import { getDictionary } from "@/libs/i18n/getDictionary";
 import type { Locale } from "@/libs/i18n/config";
+
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
-// import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const metadata: Metadata = {
   title: "AirLogex | Reliable Courier & Logistics Services",
   description:
     "AirLogex is your trusted courier and logistics partner. We deliver packages fast and securely across the country and internationally. Track, ship, and manage your deliveries with ease.",
-  keywords: ["courier", "logistics", "delivery", "shipping", "express delivery", "track packages", "international courier", "airlogex"],
+  keywords: [
+    "courier",
+    "logistics",
+    "delivery",
+    "shipping",
+    "express delivery",
+    "track packages",
+    "international courier",
+    "airlogex",
+  ],
   authors: [{ name: "AirLogex", url: "https://airlogex.com" }],
   creator: "AirLogex Team",
   metadataBase: new URL("https://airlogex.com"),
   openGraph: {
     title: "AirLogex | Reliable Courier & Logistics Services",
-    description: "Fast and secure courier services. Track your shipments and manage logistics with AirLogex.",
+    description:
+      "Fast and secure courier services. Track your shipments and manage logistics with AirLogex.",
     url: "https://airlogex.com",
     siteName: "AirLogex",
     images: [
@@ -40,8 +50,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AirLogex | Reliable Courier Services",
-    description: "Manage your shipments and track packages with AirLogex - trusted logistics solutions.",
-    creator: "@airlogex", // optional if you have a Twitter handle
+    description:
+      "Manage your shipments and track packages with AirLogex - trusted logistics solutions.",
+    creator: "@airlogex",
     images: ["/og-image.jpg"],
   },
   icons: {
@@ -54,8 +65,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function LocaleLayout({ children, params }: { children: ReactNode; params: { locale: Locale } }) {
+interface LayoutProps {
+  children: ReactNode;
+  params: { locale: Locale };
+}
+
+export default async function LocaleLayout({ children, params }: LayoutProps) {
+  // await dictionary fetching
   const dict = await getDictionary(params.locale);
+
+  // Return the layout with lang attribute set from params.locale
   return (
     <html lang={params.locale}>
       <body>
@@ -63,9 +82,15 @@ export default async function LocaleLayout({ children, params }: { children: Rea
         <main>{children}</main>
         <Footer />
 
-        {/* Scripts */}
-        <Script src="https://code.jquery.com/jquery-3.4.1.min.js" strategy="beforeInteractive" />
-        <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" strategy="lazyOnload" />
+        {/* Load scripts */}
+        <Script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+          strategy="lazyOnload"
+        />
         <Script src="/lib/easing/easing.min.js" strategy="lazyOnload" />
         <Script src="/lib/waypoints/waypoints.min.js" strategy="lazyOnload" />
         <Script src="/lib/counterup/counterup.min.js" strategy="lazyOnload" />

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import Image from "next/image";
 
 interface Order {
   id?: string;
@@ -8,51 +9,76 @@ interface Order {
 
 function FoundOrder({ OrderDetails, onclose }: { OrderDetails: Order; onclose: () => void }) {
   const steps = [
-    { title: "pasceled", icon: "fa fa-box" },
-    { title: "shipped", icon: "fa fa-truck" },
-    { title: "moving", icon: "fa fa-location" },
-    { title: "dilivered", icon: "fa fa-check" },
+    { title: "Packaged", icon: "fa fa-box" },
+    { title: "Shipped", icon: "fa fa-truck" },
+    { title: "In Transit", icon: "fa fa-location-arrow" },
+    { title: "Delivered", icon: "fa fa-check-circle" },
   ];
+
   return (
-    <div className=" absolute inset-0 h-screen w-full backdrop:blur-[5px] flex justify-center items-center">
-      <div className=" bg-gray-100 h-[80%] w-[90%] md:w-[80%] z-50 shadow-lg border border-white overflow-y-auto overflow-x-hidden">
-        <div className=" flex justify-between p-10 items-center  bg-amber-700 text-white">
-          <p>
-            <strong className=" text-white uppercase">Order Id: </strong>
-            {OrderDetails?.id}
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
+      <div className="relative w-[90%] md:w-[80%] max-h-[90%] overflow-y-auto rounded-lg bg-white shadow-2xl border border-gray-200">
+        {/* Header */}
+        <div className="flex justify-between items-center p-5 bg-red-600 rounded-t-lg">
+          <p className="text-white text-sm md:text-base font-semibold uppercase tracking-wide">
+            Order ID: {OrderDetails?.id}
           </p>
-          <p>
-            <i className="fa fa-close " onClick={onclose}></i>
-          </p>
+          <button
+            onClick={onclose}
+            className="text-white text-lg hover:text-gray-200 transition"
+          >
+            <i className="fa fa-times"></i>
+          </button>
         </div>
-        <div className=" flex flex-col md:flex-row" >
-          <div className="w-full md:w-[70%]">
-            {steps.map((step, i: number) => (
+
+        {/* Content */}
+        <div className="flex flex-col md:flex-row">
+          {/* Timeline */}
+          <div className="w-full md:w-[70%] p-6 space-y-6">
+            {steps.map((step, i) => (
               <motion.div
                 initial={{ x: 100 }}
-                whileInView={{ x: 10 }}
-                transition={{ duration: 0.5 }}
+                whileInView={{ x: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
                 key={i}
-                className=" flex items-center not-first:mt-[20px] justify-center md:mt-[40px]"
+                className="relative flex items-center gap-4"
               >
-                <div className="">
-                  {/* <span className=" font-bold">{step.title}</span> */}
-                  <span
-                    className={`${step.icon} ${
-                      OrderDetails?.activeStep >= i ? "bg-indigo-950 ring-orange-600" : "bg-gray-400"
-                    } p-3 text-white rounded-full ring-2  ring-offset-4`}
-                  ></span>
+                {/* Step Icon */}
+                <span
+                  className={`${
+                    OrderDetails?.activeStep >= i
+                      ? "bg-red-600 ring-4 ring-red-300"
+                      : "bg-gray-300 ring-4 ring-gray-200"
+                  } ${step.icon} text-white text-xl p-3 rounded-full z-10`}
+                ></span>
+
+                {/* Connecting Line */}
+                {i !== steps.length - 1 && (
+                  <div className="absolute left-[2.2rem] top-0 h-full w-1 bg-gradient-to-b from-red-600 to-red-300 z-0 rounded-full"></div>
+                )}
+
+                {/* Step Description */}
+                <div className="ml-6 bg-gray-50 shadow-md border border-gray-200 p-4 rounded-md w-full">
+                  <h3 className="text-sm font-bold mb-1 text-gray-700">{step.title}</h3>
+                  <p className="text-xs text-gray-500 leading-snug">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, incidunt.
+                  </p>
                 </div>
-                <span className="w-[10%] md:w-[20%] h-[1px] bg-orange-600"></span>
-                <p className=" shadow-md border w-[60%] text-xs bg-white p-2 z-10">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Enim ut architecto facilis quae cumque nostrum omnis
-                  perferendis sed tempore, harum dignissimos, ab velit, in illo repudiandae. Quod, esse.
-                </p>
               </motion.div>
             ))}
           </div>
-          <div className=" md:w-[30%] h-full">
-            <img src="/img/feature.jpg" alt="ship" className=" object-fill z-20 relative "/>
+
+          {/* Image Panel */}
+          <div className="w-full md:w-[30%] bg-gray-100 flex items-center justify-center p-4">
+            <div className="relative w-full h-64 md:h-full">
+              <Image
+                src="/img/feature.jpg"
+                alt="Shipping Process"
+                fill
+                className="object-cover rounded-md"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
