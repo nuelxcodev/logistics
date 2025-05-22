@@ -7,14 +7,8 @@ import WhyUscard from "./component/ui/WhyUscard";
 import { getDictionary } from "@/libs/i18n/getDictionary";
 import TrackingForm from "./component/TrackingForm";
 
-type Props = {
-  params: {
-    locale: Locale;
-  };
-};
-
-export default async function AboutPage({ params }: Props) {
-  const { locale } = params;
+export default async function Home({ params }: { params: { locale: Locale } }) {
+   const {locale} =  params;
   const dict = await getDictionary(locale);
 
   return (
@@ -123,7 +117,6 @@ export default async function AboutPage({ params }: Props) {
     </div>
   );
 }
-
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
