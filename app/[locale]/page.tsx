@@ -1,4 +1,4 @@
-import type { Locale } from "@/libs/i18n/config";
+import { locales, type Locale } from "@/libs/i18n/config";
 import TestimonialSlider from "./component/TestimonialSlider";
 import AboutUscard from "./component/ui/AboutUscard";
 import Quoter from "./component/ui/Quoter";
@@ -7,8 +7,14 @@ import WhyUscard from "./component/ui/WhyUscard";
 import { getDictionary } from "@/libs/i18n/getDictionary";
 import TrackingForm from "./component/TrackingForm";
 
-export default async function Home({ params }: { params: { locale: Locale } }) {
-   const {locale} = await params;
+type Props = {
+  params: {
+    locale: Locale;
+  };
+};
+
+export default async function AboutPage({ params }: Props) {
+  const { locale } = params;
   const dict = await getDictionary(locale);
 
   return (
@@ -116,4 +122,9 @@ export default async function Home({ params }: { params: { locale: Locale } }) {
       </a>
     </div>
   );
+}
+
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
 }
