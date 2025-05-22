@@ -1,7 +1,32 @@
 "use client";
 import Link from "next/link";
 
-const Footer = () => {
+type Footerprops = {
+  dict: {
+    nav: {
+      home: string;
+      about: string;
+      service: string;
+      contact: string;
+      blog: string;
+      quote: string;
+    };
+    footer: {
+      summary: string;
+      button: string;
+      title: string;
+      FQA: {
+        design: string;
+        reserve: string;
+        PrivacyPolicy: string;
+        terms: string;
+        FAQS: string;
+        suport:string
+      };
+    };
+  };
+};
+const Footer = ({ dict }: Footerprops) => {
   return (
     <div>
       <div className="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
@@ -42,38 +67,36 @@ const Footer = () => {
                 <div className="d-flex flex-column justify-content-start">
                   <Link className="text-white mb-2" href="#">
                     <i className="fa fa-angle-right mr-2" />
-                    Home
+                    {dict.nav.home}
                   </Link>
                   <Link className="text-white mb-2" href="#">
                     <i className="fa fa-angle-right mr-2" />
-                    About Us
+                    {dict.nav.about}
                   </Link>
                   <Link className="text-white mb-2" href="#">
                     <i className="fa fa-angle-right mr-2" />
-                    Services
+                    {dict.nav.blog}
                   </Link>
                   <Link className="text-white mb-2" href="#">
                     <i className="fa fa-angle-right mr-2" />
-                    Pricing
+                    {dict.nav.service}
                   </Link>
                   <a className="text-white" href="#">
                     <i className="fa fa-angle-right mr-2" />
-                    Contact
+                    {dict.nav.service}
                   </a>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-lg-5 col-md-6 mb-5">
-            <h3 className="text-primary mb-4">Subscribe to Our Newsletter</h3>
-            <p>
-              Stay updated with the latest news and offers. Subscribe to receive insights, updates, and special promotions straight to your inbox.
-            </p>
+            <h3 className="text-primary mb-4">{dict.footer.title}</h3>
+            <p>{dict.footer.summary}</p>
             <div className="w-100">
               <div className="input-group">
                 <input type="text" className="form-control border-light" style={{ padding: 30 }} placeholder="Your Email Address" />
                 <div className="input-group-append">
-                  <button className="btn btn-primary px-4">Sign Up</button>
+                  <button className="btn btn-primary px-4">{dict.footer.button}</button>
                 </div>
               </div>
             </div>
@@ -84,30 +107,30 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-6 text-center text-md-left mb-3 mb-md-0">
             <p className="m-0 text-white">
-              © <a href="#">Your Site Name</a>. All rights reserved.
-              Designed by <a href="https://chukwuemeka-ekine.vercel.app">nuelcodex</a>
+              © <a href="#">Aimetriz</a>. {dict.footer.FQA.reserve}
+              {dict.footer.FQA.design} <a href="https://chukwuemeka-ekine.vercel.app">nuelcodex</a>
             </p>
           </div>
           <div className="col-lg-6 text-center text-md-right">
             <ul className="nav d-inline-flex">
               <li className="nav-item">
                 <a className="nav-link text-white py-0" href="#">
-                  Privacy Policy
+                  {dict.footer.FQA.PrivacyPolicy}
                 </a>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white py-0" href="#">
-                  Terms of Service
+                  {dict.footer.FQA.terms}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white py-0" href="#">
-                  FAQs
+                  {dict.footer.FQA.FAQS}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white py-0" href="#">
-                  Support
+                  {dict.footer.FQA.suport}
                 </Link>
               </li>
             </ul>

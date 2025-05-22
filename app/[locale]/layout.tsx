@@ -17,23 +17,13 @@ export const metadata: Metadata = {
   title: "AirLogex | Reliable Courier & Logistics Services",
   description:
     "AirLogex is your trusted courier and logistics partner. We deliver packages fast and securely across the country and internationally. Track, ship, and manage your deliveries with ease.",
-  keywords: [
-    "courier",
-    "logistics",
-    "delivery",
-    "shipping",
-    "express delivery",
-    "track packages",
-    "international courier",
-    "airlogex",
-  ],
+  keywords: ["courier", "logistics", "delivery", "shipping", "express delivery", "track packages", "international courier", "airlogex"],
   authors: [{ name: "AirLogex", url: "https://airlogex.com" }],
   creator: "AirLogex Team",
   metadataBase: new URL("https://airlogex.com"),
   openGraph: {
     title: "AirLogex | Reliable Courier & Logistics Services",
-    description:
-      "Fast and secure courier services. Track your shipments and manage logistics with AirLogex.",
+    description: "Fast and secure courier services. Track your shipments and manage logistics with AirLogex.",
     url: "https://airlogex.com",
     siteName: "AirLogex",
     images: [
@@ -50,8 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AirLogex | Reliable Courier Services",
-    description:
-      "Manage your shipments and track packages with AirLogex - trusted logistics solutions.",
+    description: "Manage your shipments and track packages with AirLogex - trusted logistics solutions.",
     creator: "@airlogex",
     images: ["/og-image.jpg"],
   },
@@ -71,26 +60,20 @@ interface LayoutProps {
 }
 
 export default async function LocaleLayout({ children, params }: LayoutProps) {
-  // await dictionary fetching
-  const dict = await getDictionary(params.locale);
+  
+  const {locale} = await params;
+  const dict = await getDictionary(locale);
 
-  // Return the layout with lang attribute set from params.locale
   return (
-    <html lang={params.locale}>
+    <html lang={locale}>
       <body>
         <Navbar dict={dict} />
         <main>{children}</main>
-        <Footer />
+        <Footer dict={dict} />
 
         {/* Load scripts */}
-        <Script
-          src="https://code.jquery.com/jquery-3.4.1.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-          strategy="lazyOnload"
-        />
+        <Script src="https://code.jquery.com/jquery-3.4.1.min.js" strategy="beforeInteractive" />
+        <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" strategy="lazyOnload" />
         <Script src="/lib/easing/easing.min.js" strategy="lazyOnload" />
         <Script src="/lib/waypoints/waypoints.min.js" strategy="lazyOnload" />
         <Script src="/lib/counterup/counterup.min.js" strategy="lazyOnload" />

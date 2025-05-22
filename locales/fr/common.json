@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "service": "Service",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quote": "Obtenir un devis"
+  },
+  "hero": {
+    "safeFaster": "Sûr & Rapide",
+    "logisticsServices": "Services Logistiques"
+  },
+  "about_us": {
+    "title": "À propos de nous",
+    "subTitle": "Fournisseur de services logistiques fiable et rapide",
+    "mainText": "Avec plus de 25 ans d'expérience, nous fournissons des solutions logistiques fiables et efficaces adaptées aux besoins des entreprises modernes. De la livraison ponctuelle des marchandises à l'optimisation de la chaîne d'approvisionnement, notre engagement envers la rapidité, la sécurité et la satisfaction client nous distingue dans l'industrie logistique. Faites-nous confiance pour transporter vos marchandises avec précision et soin — à chaque fois.",
+    "button_text": "Lire la vidéo",
+    "years_experience": "Plus de 25 ans d'expérience"
+  },
+  "why_us_card": {
+    "title": "Pourquoi nous choisir",
+    "subtitle": "Services logistiques plus rapides, sûrs et fiables",
+    "maintext": "Nos services logistiques sont conçus pour offrir rapidité, sécurité et fiabilité à chaque fois. Nous garantissons une livraison plus rapide avec un engagement envers la manipulation sécurisée de vos colis. Qu'il s'agisse d'une expédition régulière ou urgente, nous avons l'expertise et la technologie pour garantir que vos colis atteignent leur destination à temps, à chaque fois.",
+    "list": {
+      "list1": "Vitesse leader dans l'industrie",
+      "list2": "Manipulation sûre et sécurisée",
+      "list3": "Assistance client fiable 24h/24 et 7j/7"
+    }
+  },
+  "our_service": {
+    "title": "Meilleurs services logistiques",
+    "service1": {
+      "title": "Fret aérien",
+      "descriptiom": "Nous fournissons des services de fret aérien rapides et fiables, garantissant que vos marchandises atteignent rapidement et en toute sécurité leur destination à travers les cieux internationaux."
+    },
+    "service2": {
+      "title": "Fret maritime",
+      "descriptiom": "Nos solutions de fret maritime offrent un transport économique et sécurisé pour de grands volumes de marchandises à travers les routes maritimes mondiales."
+    },
+    "service3": {
+      "title": "Transport terrestre",
+      "descriptiom": "Nous proposons des services de transport routier fiables pour les livraisons régionales et transfrontalières, garantissant un déplacement sécurisé et ponctuel de votre cargaison."
+    },
+    "service4": {
+      "title": "Stockage de cargaison",
+      "descriptiom": "Nos entrepôts sécurisés et spacieux offrent des solutions de stockage flexibles pour des marchandises de toutes tailles, avec un suivi complet de l'inventaire et une gestion efficace."
+    },
+    "about": {
+      "headerTitle": "À propos",
+      "breadcrumbHome": "Accueil",
+      "breadcrumbCurrent": "À propos"
+    },
+    "blog_page": {
+      "title": "Derniers articles"
+    },
+    "blog": {
+      "section": "Notre Blog",
+      "title": "Dernières nouvelles du Blog",
+      "author1": "John Doe",
+      "category1": "Logistique",
+      "post1": {
+        "title": "L'avenir de la logistique : innovation et tendances",
+        "summary": "L'industrie logistique évolue rapidement avec les avancées technologiques, l'automatisation et l'analyse des données. Dans cet article, nous explorons l'avenir de la logistique, des systèmes de suivi basés sur l'IA à l'essor des drones et des véhicules autonomes dans les services de livraison. Découvrez comment ces innovations transforment la manière dont nous déplaçons les marchandises et améliorent l'efficacité."
+      },
+      "author2": "Jane Smith",
+      "category2": "Services de livraison",
+      "post2": {
+        "title": "Comment assurer des livraisons sûres et ponctuelles",
+        "summary": "Dans le monde rapide de la logistique, assurer que les marchandises soient livrées à temps et en parfait état est une priorité. Cet article met en lumière les meilleures pratiques pour des livraisons sûres et ponctuelles, de l'emballage à la planification des itinéraires en passant par la communication avec les clients. Découvrez comment nos experts en livraison maintiennent les normes les plus élevées de l'industrie."
+      },
+      "readMore": "Lire la suite"
+    },
+    "learn_more": "En savoir plus"
+  }
+}

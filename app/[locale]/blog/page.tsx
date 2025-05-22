@@ -1,12 +1,16 @@
+import type { Locale } from "@/libs/i18n/config";
+import { getDictionary } from "@/libs/i18n/getDictionary";
 import React from "react";
 
-function BlogPage() {
+async function BlogPage({ params }: { params: { locale: Locale } }) {
+   const {locale} = await params;
+  const dict = await getDictionary(locale);
   return (
     <>
       {/* Header Start */}
       <div className="jumbotron jumbotron-fluid mb-5">
         <div className="container text-center py-5">
-          <h1 className="text-white display-3">Latest Blog</h1>
+          <h1 className="text-white display-3">{dict.blog_page.title}</h1>
           <div className="d-inline-flex align-items-center text-white">
             <p className="m-0">
               <a className="text-white" href="">

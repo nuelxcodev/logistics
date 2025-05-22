@@ -2,7 +2,7 @@ import React from "react";
 import AboutUscard from "../component/ui/AboutUscard";
 import WhyUscard from "../component/ui/WhyUscard";
 import { getDictionary } from "@/libs/i18n/getDictionary";
-import { Locale } from "@/libs/i18n/config";
+import type { Locale } from "@/libs/i18n/config";
 
 type Props = {
   params: {
@@ -11,7 +11,8 @@ type Props = {
 };
 
 export default async function AboutPage({ params }: Props) {
-  const dict = await getDictionary(params.locale);
+   const {locale} = await params;
+  const dict = await getDictionary(locale);
 
   return (
     <>

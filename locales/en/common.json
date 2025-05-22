@@ -7,7 +7,10 @@
     "contact": "Contact",
     "quote": "Get A Quote"
   },
-  "Hero": {},
+  "hero": {
+    "safeFaster": "Safe & Faster",
+    "logisticsServices": "Logistics Services"
+  },
   "about_us": {
     "title": "About Us",
     "subTitle": "Trusted & Faster Logistic Service Provider",
@@ -25,7 +28,6 @@
       "list3": "24/7 Reliable Customer Support"
     }
   },
-
   "our_service": {
     "title": "Best Logistic Services",
     "service1": {
@@ -44,12 +46,61 @@
       "title": "Cargo Storage",
       "descriptiom": "Our secure and spacious warehouses provide flexible storage solutions for goods of all sizes, with full inventory tracking and handling."
     },
-    "about": {
-      "headerTitle": "About",
-      "breadcrumbHome": "Home",
-      "breadcrumbCurrent": "About"
-    }
+
+    "blog": {
+      "section": "Our Blog",
+      "title": "Latest From Blog",
+      "author1": "John Doe",
+      "category1": "Logistics",
+      "post1": {
+        "title": "The Future of Logistics: Innovation and Trends",
+        "summary": "The logistics industry is rapidly evolving with advancements in technology, automation, and data analytics. In this post, we explore the future of logistics, from AI-powered tracking systems to the rise of drones and autonomous vehicles in delivery services. Learn how these innovations are shaping the way we move goods and enhancing efficiency."
+      },
+      "author2": "Jane Smith",
+      "category2": "Delivery Services",
+      "post2": {
+        "title": "How to Ensure Safe and Timely Deliveries",
+        "summary": "In the fast-paced world of logistics, ensuring that goods are delivered on time and in perfect condition is a top priority. This blog post highlights best practices for safe and timely deliveries, from packaging and route planning to communication with customers. Discover how our delivery experts maintain the highest standards in the industry."
+      },
+      "readMore": "Read More"
+    },
+    "learn_more": "Learn More"
   },
 
-  "learn_more": "Learn More"
+  "blog_page": {
+    "title": "Blog",
+    "breadcrumb_home": "Home",
+    "breadcrumb_blog": "Blog",
+    "categories_title": "Categories",
+    "category_web_design": "Web Design",
+    "category_web_development": "Web Development",
+    "category_online_marketing": "Online Marketing",
+    "category_keyword_research": "Keyword Research",
+    "category_email_marketing": "Email Marketing",
+    "recent_post_title": "Recent Post",
+    "tag_cloud_title": "Tag Cloud",
+    "plain_text_title": "Plain Text",
+    "plain_text_content": "Vero sea et accusam justo dolor accusam lorem consetetur, dolores sit amet sit dolor clita kasd justo, diam accusam no sea ut tempor magna takimata, amet sit et diam dolor ipsum amet diam",
+    "read_more": "Read More",
+    "pagination_previous": "Previous",
+    "pagination_next": "Next"
+  },
+  "about": {
+    "headerTitle": "About",
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "About"
+  },
+  "footer": {
+    "summary": "Stay updated with the latest news and offers. Subscribe to receive insights, updates, and special promotions straight to your inbox.",
+    "botton": "Sign Up",
+    "title": "Subscribe to Our Newsletter",
+    "FQA": {
+      "reserve": "All rights reserved.",
+      "Design": "Designed by",
+      "PrivacyPolicy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "FAQS":"FAQS",
+      "suport":"suport"
+    }
+  }
 }

@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function LanguageSwitch() {
   const pathname = usePathname();
   const router = useRouter();
-  const curren = pathname.split("/");
+  const curren = pathname.slice(1,3);
   const [open, close] = useState<boolean>(false);
 
   const changelocale = (locale: string) => {
