@@ -1,17 +1,17 @@
-// app/layout.tsx or app/[locale]/layout.tsx
 
 import { Metadata } from "next";
 import { ReactNode } from "react";
-import Navbar from "./component/Navbar";
-import Footer from "./component/Footer";
+
 import Script from "next/script";
 import "./globals.css";
-import '../public/css/style.min.css';
-import "../public/lib/owlcarousel/assets/owl.carousel.min.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@/public/css/style.min.css";
+import "@/public/lib/owlcarousel/assets/owl.carousel.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import { getDictionary } from "@/libs/i18n/getDictionary";
+import type { Locale } from "@/libs/i18n/config";
+import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
 // import 'bootstrap/dist/css/bootstrap.min.css'
-
-
 
 export const metadata: Metadata = {
   title: "AirLogex | Reliable Courier & Logistics Services",
@@ -54,11 +54,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function LocaleLayout({ children }: { children: ReactNode }) {
+export default async function LocaleLayout({ children, params }: { children: ReactNode; params: { locale: Locale } }) {
+  const dict = await getDictionary(params.locale);
   return (
-    <html lang="en">
+    <html lang={params.locale}>
       <body>
-        <Navbar />
+        <Navbar dict={dict} />
         <main>{children}</main>
         <Footer />
 

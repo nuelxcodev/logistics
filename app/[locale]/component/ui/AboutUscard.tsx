@@ -1,23 +1,34 @@
 import React from "react";
+import { ImageLoader } from "../ImageLoader";
+type AboutUscardprop = {
+  translate: {
+    about_us: {
+      title: string;
+      subTitle:string,
+      mainText:string;
+      button_text: string
+      years_experience:string
+    };
+  };
+};
 
-function AboutUscard() {
+function AboutUscard({ translate }: AboutUscardprop) {
   return (
     <div className="container-fluid py-5">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-5 pb-4 pb-lg-0">
-            <img className="img-fluid w-100" src="img/about.jpg" alt="Logistics Service" />
+          
+            <ImageLoader imageUrl="/img/about.jpg" name="Logistics Service"/>
             <div className="bg-primary text-dark text-center p-4">
-              <h3 className="m-0">25+ Years Experience</h3>
+              <h3 className="m-0 text-white">{translate.about_us.years_experience}</h3>
             </div>
           </div>
           <div className="col-lg-7">
-            <h6 className="text-primary text-uppercase font-weight-bold">About Us</h6>
-            <h1 className="mb-4">Trusted &amp; Faster Logistic Service Provider</h1>
+            <h6 className="text-primary text-uppercase font-weight-bold">{translate.about_us.title}</h6>
+            <h1 className="mb-4">{translate.about_us.subTitle}</h1>
             <p className="mb-4">
-              With over 25 years of experience, we deliver reliable and efficient logistics solutions tailored to meet the needs of modern
-              businesses. From timely freight delivery to supply chain optimization, our commitment to speed, safety, and customer satisfaction
-              sets us apart in the logistics industry. Trust us to move your goods with precision and care—every time.
+             {translate.about_us.mainText}
             </p>
             <div className="d-flex align-items-center pt-2">
               <button
@@ -29,7 +40,7 @@ function AboutUscard() {
               >
                 <span />
               </button>
-              <h5 className="font-weight-bold m-0 ml-4">Play Video</h5>
+              <h5 className="font-weight-bold m-0 ml-4">{translate.about_us.button_text}</h5>
             </div>
           </div>
         </div>

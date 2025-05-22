@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "service": "Service",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quote": "Get A Quote"
+  },
+  "Hero": {},
+  "about_us": {
+    "title": "About Us",
+    "subTitle": "Trusted & Faster Logistic Service Provider",
+    "mainText": " With over 25 years of experience, we deliver reliable and efficient logistics solutions tailored to meet the needs of modern businesses. From timely freight delivery to supply chain optimization, our commitment to speed, safety, and customer satisfactionsets us apart in the logistics industry. Trust us to move your goods with precision and care—every time.",
+    "button_text": "Play Video",
+    "years_experience": "25+ Years Experience"
+  },
+  "why_us_card": {
+    "title": "Why Choose Us",
+    "subtitle": "Faster, Safe and Trusted Logistics Services",
+    "maintext": " Our logistics services are designed to deliver speed, safety, and reliability every time. We guarantee faster delivery with acommitment to secure handling of your packages. Whether it’s a regular shipment or an urgent delivery, we have the expertise andtechnology to ensure your packages reach their destination on time, every time.",
+    "list": {
+      "list1": "Industry-Leading Speed",
+      "list2": "Safe and Secure Handling",
+      "list3": "24/7 Reliable Customer Support"
+    }
+  },
+
+  "our_service": {
+    "title": "Best Logistic Services",
+    "service1": {
+      "title": "Air Freight",
+      "descriptiom": "We provide fast and reliable air cargo services, ensuring your goods reach their destination quickly and safely across international skies."
+    },
+    "service2": {
+      "title": "Ocean Freight",
+      "descriptiom": "Our ocean freight solutions offer cost-effective and secure transportation for large volumes of goods across global sea routes."
+    },
+    "service3": {
+      "title": "Land Transport",
+      "descriptiom": "We offer dependable road transport services for regional and cross-border deliveries, ensuring timely and secure movement of cargo."
+    },
+    "service4": {
+      "title": "Cargo Storage",
+      "descriptiom": "Our secure and spacious warehouses provide flexible storage solutions for goods of all sizes, with full inventory tracking and handling."
+    }
+  },
+
+  "learn_more": "Learn More"
+}

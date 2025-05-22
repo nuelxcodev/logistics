@@ -3,19 +3,6 @@ import React from "react";
 function BlogPage() {
   return (
     <>
-      <meta charSet="utf-8" />
-      <title>FASTER - Logistics Company Website Template</title>
-      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-      <meta content="Free HTML Templates" name="keywords" />
-      <meta content="Free HTML Templates" name="description" />
-      {/* Favicon */}
-      <link href="img/favicon.ico" rel="icon" />
-      {/* Google Web Fonts */}
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-      {/* Customized Bootstrap Stylesheet */}
-      
       {/* Header Start */}
       <div className="jumbotron jumbotron-fluid mb-5">
         <div className="container text-center py-5">
@@ -40,7 +27,7 @@ function BlogPage() {
             <div className="row">
               <div className="col-md-12 mb-3">
                 <div className="position-relative">
-                  <img className="img-fluid w-100" src="img/blog-1.jpg" alt="" />
+                  <img className="img-fluid w-100" src="/img/blog-1.jpg" alt="" />
                   <div
                     className="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
                     style={{ width: 60, height: 60, bottom: "-30px", right: 30 }}
@@ -52,7 +39,7 @@ function BlogPage() {
                 <div className="bg-secondary mb-3" style={{ padding: 30 }}>
                   <div className="d-flex mb-3">
                     <div className="d-flex align-items-center">
-                      <img className="rounded-circle" style={{ width: 40, height: 40 }} src="img/user.jpg" alt="" />
+                      <img className="rounded-circle" style={{ width: 40, height: 40 }} src="/img/user.jpg" alt="" />
                       <a className="text-muted ml-2" href="">
                         John Doe
                       </a>
@@ -76,7 +63,7 @@ function BlogPage() {
               </div>
               <div className="col-md-12 mb-3">
                 <div className="position-relative">
-                  <img className="img-fluid w-100" src="img/blog-2.jpg" alt="" />
+                  <img className="img-fluid w-100" src="/img/blog-2.jpg" alt="" />
                   <div
                     className="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
                     style={{ width: 60, height: 60, bottom: "-30px", right: 30 }}
@@ -88,7 +75,7 @@ function BlogPage() {
                 <div className="bg-secondary mb-3" style={{ padding: 30 }}>
                   <div className="d-flex mb-3">
                     <div className="d-flex align-items-center">
-                      <img className="rounded-circle" style={{ width: 40, height: 40 }} src="img/user.jpg" alt="" />
+                      <img className="rounded-circle" style={{ width: 40, height: 40 }} src="/img/user.jpg" alt="" />
                       <a className="text-muted ml-2" href="">
                         John Doe
                       </a>
@@ -112,7 +99,7 @@ function BlogPage() {
               </div>
               <div className="col-md-12 mb-3">
                 <div className="position-relative">
-                  <img className="img-fluid w-100" src="img/blog-1.jpg" alt="" />
+                  <img className="img-fluid w-100" src="/img/blog-1.jpg" alt="" />
                   <div
                     className="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
                     style={{ width: 60, height: 60, bottom: "-30px", right: 30 }}
@@ -124,7 +111,7 @@ function BlogPage() {
                 <div className="bg-secondary mb-3" style={{ padding: 30 }}>
                   <div className="d-flex mb-3">
                     <div className="d-flex align-items-center">
-                      <img className="rounded-circle" style={{ width: 40, height: 40 }} src="img/user.jpg" alt="" />
+                      <img className="rounded-circle" style={{ width: 40, height: 40 }} src="/img/user.jpg" alt="" />
                       <a className="text-muted ml-2" href="">
                         John Doe
                       </a>
@@ -248,31 +235,31 @@ function BlogPage() {
             <div className="mb-5">
               <h3 className="mb-4">Recent Post</h3>
               <div className="d-flex mb-3">
-                <img className="img-fluid" src="img/blog-1.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
+                <img className="img-fluid" src="/img/blog-1.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
                 <a href="" className="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style={{ height: 80 }}>
                   Lorem ipsum dolor sit amet consec adipis elit
                 </a>
               </div>
               <div className="d-flex mb-3">
-                <img className="img-fluid" src="img/blog-2.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
+                <img className="img-fluid" src="/img/blog-2.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
                 <a href="" className="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style={{ height: 80 }}>
                   Lorem ipsum dolor sit amet consec adipis elit
                 </a>
               </div>
               <div className="d-flex mb-3">
-                <img className="img-fluid" src="img/blog-1.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
+                <img className="img-fluid" src="/img/blog-1.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
                 <a href="" className="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style={{ height: 80 }}>
                   Lorem ipsum dolor sit amet consec adipis elit
                 </a>
               </div>
               <div className="d-flex mb-3">
-                <img className="img-fluid" src="img/blog-2.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
+                <img className="img-fluid" src="/img/blog-2.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
                 <a href="" className="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style={{ height: 80 }}>
                   Lorem ipsum dolor sit amet consec adipis elit
                 </a>
               </div>
               <div className="d-flex mb-3">
-                <img className="img-fluid" src="img/blog-1.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
+                <img className="img-fluid" src="/img/blog-1.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
                 <a href="" className="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style={{ height: 80 }}>
                   Lorem ipsum dolor sit amet consec adipis elit
                 </a>
@@ -281,7 +268,7 @@ function BlogPage() {
             {/* Recent Post End */}
             {/* Image Start */}
             <div className="mb-5">
-              <img src="img/blog-1.jpg" alt="" className="img-fluid" />
+              <img src="/img/blog-1.jpg" alt="" className="img-fluid" />
             </div>
             {/* Image End */}
             {/* Tags Start */}
@@ -311,7 +298,7 @@ function BlogPage() {
             {/* Tags End */}
             {/* Image Start */}
             <div className="mb-5">
-              <img src="img/blog-2.jpg" alt="" className="img-fluid" />
+              <img src="/img/blog-2.jpg" alt="" className="img-fluid" />
             </div>
             {/* Image End */}
             {/* Plain Text Start */}
@@ -337,9 +324,6 @@ function BlogPage() {
       <a href="#" className="btn btn-lg btn-primary back-to-top">
         <i className="fa fa-angle-double-up" />
       </a>
-      {/* JavaScript Libraries */}
-      {/* Contact Javascript File */}
-      {/* Template Javascript */}
     </>
   );
 }

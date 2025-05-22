@@ -1,8 +1,11 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 
 const TestimonialSlider: React.FC = () => {
+  useEffect(()=>{
+    
+  },[])
   return (
     <div className="container-fluid py-5">
       <div className="container">
