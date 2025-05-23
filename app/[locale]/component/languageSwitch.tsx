@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
 
-// Map language code to name and external flag image URL
 const languageMap: Record<string, { name: string; flag: string }> = {
   en: { name: "English", flag: "https://flagcdn.com/gb.svg" },
   fr: { name: "Français", flag: "https://flagcdn.com/fr.svg" },
@@ -21,49 +20,72 @@ const languageMap: Record<string, { name: string; flag: string }> = {
 export default function LanguageSwitch() {
   const pathname = usePathname();
   const router = useRouter();
-  const curren = pathname.slice(1, 3);
-  const [open, close] = useState<boolean>(false);
+  const currentLangCode = pathname.slice(1, 3);
+  const [open, setOpen] = useState<boolean>(false);
 
   const changelocale = (locale: string) => {
-    const segment = pathname.split("/");
-    segment[1] = locale;
-
-    router.push(segment.join("/"));
+    const segments = pathname.split("/");
+    segments[1] = locale;
+    router.push(segments.join("/"));
   };
 
-  // Get current language info
-  const currentLang = languageMap[curren] || { name: curren.toUpperCase(), flag: "" };
+  const currentLang = languageMap[currentLangCode] || {
+    name: currentLangCode.toUpperCase(),
+    flag: "",
+  };
 
   return (
-    <div className="fixed lg:relative w-auto h-screen w-screen lg:h-max z-50 top-[90vh] lg:top-0  ">
-      <div className="flex justify-center items-center gap-2 md:gap-5 p-2 bg-[#ff4800] lg:bg-transparent border shardow-lg lg:border-none" onClick={() => close((prv) => !prv)}>
+    <div className="fixed bottom-6 lg:bottom-0 left-4 lg:left-0 lg:relative z-50">
+      {/* Button */}
+      <div
+        onClick={() => setOpen((prev) => !prev)}
+        className="flex items-center gap-2 px-4 py-2 rounded-md shadow-md lg:shadow-none bg-[#ff4800] lg:bg-transparent max-lg:border cursor-pointer"
+      >
         <i className="fa fa-globe max-lg:text-white" />
-        <span className="flex items-center gap-2 ">
-          {currentLang.flag && <Image src={currentLang.flag} alt={currentLang.name} width={24} height={16} />}
-          <span className="uppercase max-lg:text-white ">{currentLang.name}</span>
+        <span className="flex items-center gap-2 max-lg:text-white text-sm font-semibold">
+          {currentLang.flag && (
+            <Image
+              src={currentLang.flag}
+              alt={currentLang.name}
+              width={24}
+              height={16}
+              className="rounded-sm"
+            />
+          )}
+          <span>{currentLang.name}</span>
         </span>
       </div>
-      <div className="absolute -top-[50%] lg:top-[60px] left-0 md:rigth-0 z-10 w-[15rem]  ">
-        {open && (
+
+      {/* Dropdown */}
+      {open && (
+        <div className="absolute bottom-full left-0 mt-2 w-60 lg:top-[60px] lg:mt-0">
           <motion.div
-            initial={{ height: 0 }}
-            animate={{ height: "auto" }}
-            className="bg-white flex flex-col justify-center item-center shadow-md border"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="bg-white rounded-md shadow-lg border border-gray-200 overflow-hidden flex flex-col"
           >
             {locales.map((loc) => (
               <button
                 key={loc}
-                value={loc}
                 onClick={() => changelocale(loc)}
-                className="outline-none flex items-center gap-2 px-3 py-2 hover:bg-gray-100"
+                className="flex items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100 transition-colors duration-200 w-full text-left"
               >
-                {languageMap[loc]?.flag && <Image src={languageMap[loc].flag} alt={languageMap[loc].name} width={24} height={16} />}
-                <span>{languageMap[loc]?.name}</span>
+                {languageMap[loc]?.flag && (
+                  <Image
+                    src={languageMap[loc].flag}
+                    alt={languageMap[loc].name}
+                    width={24}
+                    height={16}
+                    className="rounded-sm"
+                  />
+                )}
+                <span className="text-gray-700">{languageMap[loc]?.name}</span>
               </button>
             ))}
           </motion.div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
