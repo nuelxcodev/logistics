@@ -1,18 +1,16 @@
-import React from "react";
-import AboutUscard from "../component/ui/AboutUscard";
-import WhyUscard from "../component/ui/WhyUscard";
 import { getDictionary } from "@/libs/i18n/getDictionary";
 import { locales, type Locale } from "@/libs/i18n/config";
+import AboutUscard from "../component/ui/AboutUscard";
+import WhyUscard from "../component/ui/WhyUscard";
 
-type Props = {
+type PageProps = {
   params: {
     locale: Locale;
   };
 };
 
-export default async function AboutPage({ params }: Props) {
-  const { locale } = params; 
-  const dict = await getDictionary(locale); 
+export default async function AboutPage({ params }: PageProps) {
+  const dict = await getDictionary(params.locale);
 
   return (
     <>
@@ -47,7 +45,6 @@ export default async function AboutPage({ params }: Props) {
     </>
   );
 }
-
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

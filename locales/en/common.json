@@ -68,22 +68,39 @@
   },
 
   "blog_page": {
-    "title": "Blog",
+    "title": "Courier News & Insights",
     "breadcrumb_home": "Home",
     "breadcrumb_blog": "Blog",
-    "categories_title": "Categories",
-    "category_web_design": "Web Design",
-    "category_web_development": "Web Development",
-    "category_online_marketing": "Online Marketing",
-    "category_keyword_research": "Keyword Research",
-    "category_email_marketing": "Email Marketing",
-    "recent_post_title": "Recent Post",
-    "tag_cloud_title": "Tag Cloud",
-    "plain_text_title": "Plain Text",
-    "plain_text_content": "Vero sea et accusam justo dolor accusam lorem consetetur, dolores sit amet sit dolor clita kasd justo, diam accusam no sea ut tempor magna takimata, amet sit et diam dolor ipsum amet diam",
+    "author": "AirMetriz Team",
+    "category": "Logistics",
+    "post1_title": "How to Track Your Package with AirMetriz",
+    "post1_desc": "Learn how to easily track your shipments in real-time using AirMetriz's advanced tracking system. Stay updated on your delivery status from pickup to drop-off.",
+    "post2_title": "5 Tips for Fast and Secure Delivery",
+    "post2_desc": "Discover essential tips to ensure your parcels are delivered quickly and safely. AirMetriz shares best practices for packaging, labeling, and scheduling pickups.",
+    "post3_title": "Why Choose AirMetriz for International Shipping?",
+    "post3_desc": "Explore the benefits of shipping internationally with AirMetriz. From customs clearance to timely delivery, we make global logistics simple.",
     "read_more": "Read More",
-    "pagination_previous": "Previous",
-    "pagination_next": "Next"
+    "search_placeholder": "Search blog...",
+    "categories": "Categories",
+    "category_delivery": "Delivery",
+    "category_tracking": "Tracking",
+    "category_logistics": "Logistics",
+    "category_tips": "Shipping Tips",
+    "category_support": "Customer Support",
+    "recent_posts": "Recent Posts",
+    "recent_post1": "How to Track Your Package with AirMetriz",
+    "recent_post2": "5 Tips for Fast and Secure Delivery",
+    "recent_post3": "Why Choose AirMetriz for International Shipping?",
+    "tag_cloud": "Tag Cloud",
+    "tag_shipping": "Shipping",
+    "tag_tracking": "Tracking",
+    "tag_logistics": "Logistics",
+    "tag_support": "Support",
+    "tag_delivery": "Delivery",
+    "tag_express": "Express",
+    "about_us": "About AirMetriz",
+    "about_us_text": "AirMetriz is committed to providing reliable, fast, and secure courier services. We connect businesses and individuals across the globe with our innovative logistics solutions.",
+    "learn_more": "Learn More"
   },
   "about": {
     "headerTitle": "About",
@@ -99,8 +116,8 @@
       "Design": "Designed by",
       "PrivacyPolicy": "Privacy Policy",
       "terms": "Terms of Service",
-      "FAQS":"FAQS",
-      "suport":"suport"
+      "FAQS": "FAQS",
+      "suport": "suport"
     }
   }
 }

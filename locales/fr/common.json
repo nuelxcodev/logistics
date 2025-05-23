@@ -14,63 +14,108 @@
   "about_us": {
     "title": "À propos de nous",
     "subTitle": "Fournisseur de services logistiques fiable et rapide",
-    "mainText": "Avec plus de 25 ans d'expérience, nous fournissons des solutions logistiques fiables et efficaces adaptées aux besoins des entreprises modernes. De la livraison ponctuelle des marchandises à l'optimisation de la chaîne d'approvisionnement, notre engagement envers la rapidité, la sécurité et la satisfaction client nous distingue dans l'industrie logistique. Faites-nous confiance pour transporter vos marchandises avec précision et soin — à chaque fois.",
-    "button_text": "Lire la vidéo",
-    "years_experience": "Plus de 25 ans d'expérience"
+    "mainText": "Avec plus de 25 ans d'expérience, nous proposons des solutions logistiques fiables et efficaces, adaptées aux besoins des entreprises modernes. De la livraison ponctuelle au transport à l'optimisation de la chaîne d'approvisionnement, notre engagement envers la rapidité, la sécurité et la satisfaction client nous distingue dans l'industrie logistique. Faites-nous confiance pour transporter vos marchandises avec précision et soin — à chaque fois.",
+    "button_text": "Regarder la vidéo",
+    "years_experience": "25+ ans d'expérience"
   },
   "why_us_card": {
     "title": "Pourquoi nous choisir",
-    "subtitle": "Services logistiques plus rapides, sûrs et fiables",
-    "maintext": "Nos services logistiques sont conçus pour offrir rapidité, sécurité et fiabilité à chaque fois. Nous garantissons une livraison plus rapide avec un engagement envers la manipulation sécurisée de vos colis. Qu'il s'agisse d'une expédition régulière ou urgente, nous avons l'expertise et la technologie pour garantir que vos colis atteignent leur destination à temps, à chaque fois.",
+    "subtitle": "Des services logistiques rapides, sûrs et fiables",
+    "maintext": "Nos services logistiques sont conçus pour garantir rapidité, sécurité et fiabilité à chaque fois. Nous assurons une livraison plus rapide avec un engagement envers la sécurité de vos colis. Qu’il s’agisse d’un envoi régulier ou d’une livraison urgente, nous disposons de l’expertise et de la technologie nécessaires pour que vos colis arrivent à destination à temps, à chaque fois.",
     "list": {
-      "list1": "Vitesse leader dans l'industrie",
+      "list1": "Vitesse de pointe dans l'industrie",
       "list2": "Manipulation sûre et sécurisée",
-      "list3": "Assistance client fiable 24h/24 et 7j/7"
+      "list3": "Assistance clientèle 24h/24 et 7j/7"
     }
   },
   "our_service": {
     "title": "Meilleurs services logistiques",
     "service1": {
       "title": "Fret aérien",
-      "descriptiom": "Nous fournissons des services de fret aérien rapides et fiables, garantissant que vos marchandises atteignent rapidement et en toute sécurité leur destination à travers les cieux internationaux."
+      "descriptiom": "Nous offrons des services de fret aérien rapides et fiables, garantissant que vos marchandises atteignent leur destination rapidement et en toute sécurité à l'international."
     },
     "service2": {
       "title": "Fret maritime",
-      "descriptiom": "Nos solutions de fret maritime offrent un transport économique et sécurisé pour de grands volumes de marchandises à travers les routes maritimes mondiales."
+      "descriptiom": "Nos solutions de fret maritime offrent un transport sécurisé et économique pour les volumes importants de marchandises à travers les routes maritimes mondiales."
     },
     "service3": {
       "title": "Transport terrestre",
-      "descriptiom": "Nous proposons des services de transport routier fiables pour les livraisons régionales et transfrontalières, garantissant un déplacement sécurisé et ponctuel de votre cargaison."
+      "descriptiom": "Nous proposons des services de transport routier fiables pour les livraisons régionales et transfrontalières, assurant un déplacement ponctuel et sécurisé du fret."
     },
     "service4": {
-      "title": "Stockage de cargaison",
-      "descriptiom": "Nos entrepôts sécurisés et spacieux offrent des solutions de stockage flexibles pour des marchandises de toutes tailles, avec un suivi complet de l'inventaire et une gestion efficace."
-    },
-    "about": {
-      "headerTitle": "À propos",
-      "breadcrumbHome": "Accueil",
-      "breadcrumbCurrent": "À propos"
-    },
-    "blog_page": {
-      "title": "Derniers articles"
+      "title": "Stockage de marchandises",
+      "descriptiom": "Nos entrepôts sécurisés et spacieux offrent des solutions de stockage flexibles pour des marchandises de toutes tailles, avec un suivi complet des stocks et une manutention efficace."
     },
     "blog": {
       "section": "Notre Blog",
-      "title": "Dernières nouvelles du Blog",
+      "title": "Dernières nouvelles du blog",
       "author1": "John Doe",
       "category1": "Logistique",
       "post1": {
-        "title": "L'avenir de la logistique : innovation et tendances",
-        "summary": "L'industrie logistique évolue rapidement avec les avancées technologiques, l'automatisation et l'analyse des données. Dans cet article, nous explorons l'avenir de la logistique, des systèmes de suivi basés sur l'IA à l'essor des drones et des véhicules autonomes dans les services de livraison. Découvrez comment ces innovations transforment la manière dont nous déplaçons les marchandises et améliorent l'efficacité."
+        "title": "L’avenir de la logistique : Innovation et tendances",
+        "summary": "L'industrie logistique évolue rapidement grâce aux avancées technologiques, à l'automatisation et à l'analyse de données. Dans cet article, nous explorons l'avenir de la logistique, des systèmes de suivi alimentés par l'IA à l'essor des drones et des véhicules autonomes dans les services de livraison. Découvrez comment ces innovations transforment la mobilité des marchandises et améliorent l'efficacité."
       },
       "author2": "Jane Smith",
       "category2": "Services de livraison",
       "post2": {
         "title": "Comment assurer des livraisons sûres et ponctuelles",
-        "summary": "Dans le monde rapide de la logistique, assurer que les marchandises soient livrées à temps et en parfait état est une priorité. Cet article met en lumière les meilleures pratiques pour des livraisons sûres et ponctuelles, de l'emballage à la planification des itinéraires en passant par la communication avec les clients. Découvrez comment nos experts en livraison maintiennent les normes les plus élevées de l'industrie."
+        "summary": "Dans le monde rapide de la logistique, garantir que les marchandises soient livrées à temps et en parfait état est une priorité. Cet article présente les meilleures pratiques pour des livraisons sûres et ponctuelles, de l'emballage à la planification des itinéraires, en passant par la communication avec les clients. Découvrez comment nos experts en livraison maintiennent les normes les plus élevées de l'industrie."
       },
       "readMore": "Lire la suite"
     },
     "learn_more": "En savoir plus"
+  },
+  "blog_page": {
+    "title": "Actualités & Analyses du Courrier",
+    "breadcrumb_home": "Accueil",
+    "breadcrumb_blog": "Blog",
+    "author": "Équipe AirMetriz",
+    "category": "Logistique",
+    "post1_title": "Comment suivre votre colis avec AirMetriz",
+    "post1_desc": "Découvrez comment suivre facilement vos expéditions en temps réel grâce au système de suivi avancé d'AirMetriz. Restez informé du statut de votre livraison du ramassage à la livraison.",
+    "post2_title": "5 conseils pour une livraison rapide et sécurisée",
+    "post2_desc": "Découvrez des conseils essentiels pour garantir que vos colis soient livrés rapidement et en toute sécurité. AirMetriz partage les meilleures pratiques en matière d'emballage, d'étiquetage et de planification des ramassages.",
+    "post3_title": "Pourquoi choisir AirMetriz pour les expéditions internationales ?",
+    "post3_desc": "Découvrez les avantages d’expédier à l’international avec AirMetriz. Du dédouanement à la livraison dans les délais, nous simplifions la logistique mondiale.",
+    "read_more": "Lire la suite",
+    "search_placeholder": "Rechercher sur le blog...",
+    "categories": "Catégories",
+    "category_delivery": "Livraison",
+    "category_tracking": "Suivi",
+    "category_logistics": "Logistique",
+    "category_tips": "Conseils d'expédition",
+    "category_support": "Support client",
+    "recent_posts": "Articles récents",
+    "recent_post1": "Comment suivre votre colis avec AirMetriz",
+    "recent_post2": "5 conseils pour une livraison rapide et sécurisée",
+    "recent_post3": "Pourquoi choisir AirMetriz pour les expéditions internationales ?",
+    "tag_cloud": "Nuage de tags",
+    "tag_shipping": "Expédition",
+    "tag_tracking": "Suivi",
+    "tag_logistics": "Logistique",
+    "tag_support": "Support",
+    "tag_delivery": "Livraison",
+    "tag_express": "Express",
+    "about_us": "À propos d'AirMetriz",
+    "about_us_text": "AirMetriz s'engage à fournir des services de messagerie fiables, rapides et sécurisés. Nous connectons les entreprises et les particuliers à travers le monde grâce à nos solutions logistiques innovantes.",
+    "learn_more": "En savoir plus"
+  },
+  "about": {
+    "headerTitle": "À propos",
+    "breadcrumbHome": "Accueil",
+    "breadcrumbCurrent": "À propos"
+  },
+  "footer": {
+    "summary": "Restez informé des dernières actualités et offres. Abonnez-vous pour recevoir des analyses, des mises à jour et des promotions spéciales directement dans votre boîte mail.",
+    "botton": "S’inscrire",
+    "title": "Abonnez-vous à notre newsletter",
+    "FQA": {
+      "reserve": "Tous droits réservés.",
+      "Design": "Conçu par",
+      "PrivacyPolicy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "FAQS": "FAQ",
+      "suport": "support"
+    }
   }
 }

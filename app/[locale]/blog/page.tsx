@@ -1,10 +1,11 @@
-import { locales, type Locale } from "@/libs/i18n/config";
+import type { Locale } from "@/libs/i18n/config";
 import { getDictionary } from "@/libs/i18n/getDictionary";
-import React from "react";
+import Image from "next/image";
 
 async function BlogPage({ params }: { params: { locale: Locale } }) {
-   const {locale} = params;
+  const { locale } = params;
   const dict = await getDictionary(locale);
+
   return (
     <>
       {/* Header Start */}
@@ -14,11 +15,11 @@ async function BlogPage({ params }: { params: { locale: Locale } }) {
           <div className="d-inline-flex align-items-center text-white">
             <p className="m-0">
               <a className="text-white" href="">
-                Home
+                {dict.nav.home}
               </a>
             </p>
             <i className="fa fa-circle px-3" />
-            <p className="m-0">Blog</p>
+            <p className="m-0">{dict.blog_page.breadcrumbCurrent}</p>
           </div>
         </div>
       </div>
@@ -31,7 +32,7 @@ async function BlogPage({ params }: { params: { locale: Locale } }) {
             <div className="row">
               <div className="col-md-12 mb-3">
                 <div className="position-relative">
-                  <img className="img-fluid w-100" src="/img/blog-1.jpg" alt="" />
+                  <Image className="img-fluid w-100" src="/img/blog-1.jpg" alt="" width={750} height={400} />
                   <div
                     className="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
                     style={{ width: 60, height: 60, bottom: "-30px", right: 30 }}
@@ -43,31 +44,28 @@ async function BlogPage({ params }: { params: { locale: Locale } }) {
                 <div className="bg-secondary mb-3" style={{ padding: 30 }}>
                   <div className="d-flex mb-3">
                     <div className="d-flex align-items-center">
-                      <img className="rounded-circle" style={{ width: 40, height: 40 }} src="/img/user.jpg" alt="" />
+                      <Image className="rounded-circle" style={{ width: 40, height: 40 }} src="/img/user.jpg" alt="" width={40} height={40} />
                       <a className="text-muted ml-2" href="">
-                        John Doe
+                        {dict.blog_page.author}
                       </a>
                     </div>
                     <div className="d-flex align-items-center ml-4">
                       <i className="far fa-bookmark text-primary" />
                       <a className="text-muted ml-2" href="">
-                        Web Design
+                        {dict.blog_page.category}
                       </a>
                     </div>
                   </div>
-                  <h4 className="font-weight-bold mb-3">Kasd tempor diam sea justo dolor</h4>
-                  <p>
-                    Dolor sea ipsum ipsum et. Erat duo lorem magna vero dolor dolores. Rebum eirmod no dolor diam dolor amet ipsum. Lorem lorem
-                    sea sed diam est lorem magna
-                  </p>
+                  <h4 className="font-weight-bold mb-3">{dict.blog_page.post1_title}</h4>
+                  <p>{dict.blog_page.post1_desc}</p>
                   <a className="border-bottom border-primary text-uppercase text-decoration-none" href="">
-                    Read More <i className="fa fa-angle-right" />
+                    {dict.blog_page.read_more} <i className="fa fa-angle-right" />
                   </a>
                 </div>
               </div>
               <div className="col-md-12 mb-3">
                 <div className="position-relative">
-                  <img className="img-fluid w-100" src="/img/blog-2.jpg" alt="" />
+                  <Image className="img-fluid w-100" src="/img/blog-2.jpg" alt="" width={750} height={400} />
                   <div
                     className="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
                     style={{ width: 60, height: 60, bottom: "-30px", right: 30 }}
@@ -79,31 +77,28 @@ async function BlogPage({ params }: { params: { locale: Locale } }) {
                 <div className="bg-secondary mb-3" style={{ padding: 30 }}>
                   <div className="d-flex mb-3">
                     <div className="d-flex align-items-center">
-                      <img className="rounded-circle" style={{ width: 40, height: 40 }} src="/img/user.jpg" alt="" />
+                      <Image className="rounded-circle" style={{ width: 40, height: 40 }} src="/img/user.jpg" alt="" width={40} height={40} />
                       <a className="text-muted ml-2" href="">
-                        John Doe
+                        {dict.blog_page.author}
                       </a>
                     </div>
                     <div className="d-flex align-items-center ml-4">
                       <i className="far fa-bookmark text-primary" />
                       <a className="text-muted ml-2" href="">
-                        Web Design
+                        {dict.blog_page.category}
                       </a>
                     </div>
                   </div>
-                  <h4 className="font-weight-bold mb-3">Kasd tempor diam sea justo dolor</h4>
-                  <p>
-                    Dolor sea ipsum ipsum et. Erat duo lorem magna vero dolor dolores. Rebum eirmod no dolor diam dolor amet ipsum. Lorem lorem
-                    sea sed diam est lorem magna
-                  </p>
+                  <h4 className="font-weight-bold mb-3">{dict.blog_page.post2_title}</h4>
+                  <p>{dict.blog_page.post2_desc}</p>
                   <a className="border-bottom border-primary text-uppercase text-decoration-none" href="">
-                    Read More <i className="fa fa-angle-right" />
+                    {dict.blog_page.read_more} <i className="fa fa-angle-right" />
                   </a>
                 </div>
               </div>
               <div className="col-md-12 mb-3">
                 <div className="position-relative">
-                  <img className="img-fluid w-100" src="/img/blog-1.jpg" alt="" />
+                  <Image className="img-fluid w-100" src="/img/blog-1.jpg" alt="" width={750} height={400} />
                   <div
                     className="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
                     style={{ width: 60, height: 60, bottom: "-30px", right: 30 }}
@@ -115,25 +110,22 @@ async function BlogPage({ params }: { params: { locale: Locale } }) {
                 <div className="bg-secondary mb-3" style={{ padding: 30 }}>
                   <div className="d-flex mb-3">
                     <div className="d-flex align-items-center">
-                      <img className="rounded-circle" style={{ width: 40, height: 40 }} src="/img/user.jpg" alt="" />
+                      <Image className="rounded-circle" style={{ width: 40, height: 40 }} src="/img/user.jpg" alt="" width={40} height={40} />
                       <a className="text-muted ml-2" href="">
-                        John Doe
+                        {dict.blog_page.author}
                       </a>
                     </div>
                     <div className="d-flex align-items-center ml-4">
                       <i className="far fa-bookmark text-primary" />
                       <a className="text-muted ml-2" href="">
-                        Web Design
+                        {dict.blog_page.category}
                       </a>
                     </div>
                   </div>
-                  <h4 className="font-weight-bold mb-3">Kasd tempor diam sea justo dolor</h4>
-                  <p>
-                    Dolor sea ipsum ipsum et. Erat duo lorem magna vero dolor dolores. Rebum eirmod no dolor diam dolor amet ipsum. Lorem lorem
-                    sea sed diam est lorem magna
-                  </p>
+                  <h4 className="font-weight-bold mb-3">{dict.blog_page.post3_title}</h4>
+                  <p>{dict.blog_page.post3_desc}</p>
                   <a className="border-bottom border-primary text-uppercase text-decoration-none" href="">
-                    Read More <i className="fa fa-angle-right" />
+                    {dict.blog_page.read_more} <i className="fa fa-angle-right" />
                   </a>
                 </div>
               </div>
@@ -181,7 +173,7 @@ async function BlogPage({ params }: { params: { locale: Locale } }) {
             <div className="mb-5">
               <div className="bg-secondary" style={{ padding: 30 }}>
                 <div className="input-group">
-                  <input type="text" className="form-control border-0 p-4" placeholder="Keyword" />
+                  <input type="text" className="form-control border-0 p-4" placeholder={dict.blog_page.search_placeholder} />
                   <div className="input-group-append">
                     <span className="input-group-text bg-primary border-primary text-white">
                       <i className="fa fa-search" />
@@ -193,41 +185,41 @@ async function BlogPage({ params }: { params: { locale: Locale } }) {
             {/* Search Form End */}
             {/* Category Start */}
             <div className="mb-5">
-              <h3 className="mb-4">Categories</h3>
+              <h3 className="mb-4">{dict.blog_page.categories}</h3>
               <div className="bg-secondary" style={{ padding: 30 }}>
                 <ul className="list-inline m-0">
                   <li className="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center">
                     <a className="text-dark" href="#">
                       <i className="fa fa-angle-right text-primary mr-2" />
-                      Web Design
+                      {dict.blog_page.category_delivery}
                     </a>
                     <span className="badge badge-secondary badge-pill">150</span>
                   </li>
                   <li className="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center">
                     <a className="text-dark" href="#">
                       <i className="fa fa-angle-right text-primary mr-2" />
-                      Web Development
+                      {dict.blog_page.category_tracking}
                     </a>
                     <span className="badge badge-secondary badge-pill">131</span>
                   </li>
                   <li className="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center">
                     <a className="text-dark" href="#">
                       <i className="fa fa-angle-right text-primary mr-2" />
-                      Online Marketing
+                      {dict.blog_page.category_logistics}
                     </a>
                     <span className="badge badge-secondary badge-pill">78</span>
                   </li>
                   <li className="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center">
                     <a className="text-dark" href="#">
                       <i className="fa fa-angle-right text-primary mr-2" />
-                      Keyword Research
+                      {dict.blog_page.category_tips}
                     </a>
                     <span className="badge badge-secondary badge-pill">56</span>
                   </li>
                   <li className="py-2 px-3 bg-light d-flex justify-content-between align-items-center">
                     <a className="text-dark" href="#">
                       <i className="fa fa-angle-right text-primary mr-2" />
-                      Email Marketing
+                      {dict.blog_page.category_support}
                     </a>
                     <span className="badge badge-secondary badge-pill">98</span>
                   </li>
@@ -237,84 +229,116 @@ async function BlogPage({ params }: { params: { locale: Locale } }) {
             {/* Category End */}
             {/* Recent Post Start */}
             <div className="mb-5">
-              <h3 className="mb-4">Recent Post</h3>
+              <h3 className="mb-4">{dict.blog_page.recent_posts}</h3>
               <div className="d-flex mb-3">
-                <img className="img-fluid" src="/img/blog-1.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
+                <Image
+                  className="img-fluid"
+                  src="/img/blog-1.jpg"
+                  style={{ width: 80, height: 80, objectFit: "cover" }}
+                  alt=""
+                  width={80}
+                  height={80}
+                />
                 <a href="" className="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style={{ height: 80 }}>
-                  Lorem ipsum dolor sit amet consec adipis elit
+                  {dict.blog_page.recent_post1}
                 </a>
               </div>
               <div className="d-flex mb-3">
-                <img className="img-fluid" src="/img/blog-2.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
+                <Image
+                  className="img-fluid"
+                  src="/img/blog-2.jpg"
+                  style={{ width: 80, height: 80, objectFit: "cover" }}
+                  alt=""
+                  width={80}
+                  height={80}
+                />
                 <a href="" className="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style={{ height: 80 }}>
-                  Lorem ipsum dolor sit amet consec adipis elit
+                  {dict.blog_page.recent_post2}
                 </a>
               </div>
               <div className="d-flex mb-3">
-                <img className="img-fluid" src="/img/blog-1.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
+                <Image
+                  className="img-fluid"
+                  src="/img/blog-1.jpg"
+                  style={{ width: 80, height: 80, objectFit: "cover" }}
+                  alt=""
+                  width={80}
+                  height={80}
+                />
                 <a href="" className="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style={{ height: 80 }}>
-                  Lorem ipsum dolor sit amet consec adipis elit
+                  {dict.blog_page.recent_post3}
                 </a>
               </div>
               <div className="d-flex mb-3">
-                <img className="img-fluid" src="/img/blog-2.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
+                <Image
+                  className="img-fluid"
+                  src="/img/blog-2.jpg"
+                  style={{ width: 80, height: 80, objectFit: "cover" }}
+                  alt=""
+                  width={80}
+                  height={80}
+                />
                 <a href="" className="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style={{ height: 80 }}>
-                  Lorem ipsum dolor sit amet consec adipis elit
+                  {dict.blog_page.recent_post4}
                 </a>
               </div>
               <div className="d-flex mb-3">
-                <img className="img-fluid" src="/img/blog-1.jpg" style={{ width: 80, height: 80, objectFit: "cover" }} alt="" />
+                <Image
+                  className="img-fluid"
+                  src="/img/blog-1.jpg"
+                  style={{ width: 80, height: 80, objectFit: "cover" }}
+                  alt=""
+                  width={80}
+                  height={80}
+                />
                 <a href="" className="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style={{ height: 80 }}>
-                  Lorem ipsum dolor sit amet consec adipis elit
+                  {dict.blog_page.recent_post5}
                 </a>
               </div>
             </div>
             {/* Recent Post End */}
             {/* Image Start */}
             <div className="mb-5">
-              <img src="/img/blog-1.jpg" alt="" className="img-fluid" />
+              <Image src="/img/blog-1.jpg" alt="" className="img-fluid" width={400} height={250} />
             </div>
             {/* Image End */}
             {/* Tags Start */}
             <div className="mb-5">
-              <h3 className="mb-4">Tag Cloud</h3>
+              <h3 className="mb-4">{dict.blog_page.tag_cloud}</h3>
               <div className="d-flex flex-wrap m-n1">
                 <a href="" className="btn btn-secondary m-1">
-                  Design
+                  {dict.blog_page.tag_shipping}
                 </a>
                 <a href="" className="btn btn-secondary m-1">
-                  Development
+                  {dict.blog_page.tag_tracking}
                 </a>
                 <a href="" className="btn btn-secondary m-1">
-                  Marketing
+                  {dict.blog_page.tag_logistics}
                 </a>
                 <a href="" className="btn btn-secondary m-1">
-                  SEO
+                  {dict.blog_page.tag_support}
                 </a>
                 <a href="" className="btn btn-secondary m-1">
-                  Writing
+                  {dict.blog_page.tag_delivery}
                 </a>
                 <a href="" className="btn btn-secondary m-1">
-                  Consulting
+                  {dict.blog_page.tag_express}
                 </a>
               </div>
             </div>
             {/* Tags End */}
             {/* Image Start */}
             <div className="mb-5">
-              <img src="/img/blog-2.jpg" alt="" className="img-fluid" />
+              <Image src="/img/blog-2.jpg" alt="" className="img-fluid" width={400} height={250} />
             </div>
             {/* Image End */}
             {/* Plain Text Start */}
             <div>
-              <h3 className="mb-4">Plain Text</h3>
+              <h3 className="mb-4">{dict.blog_page.about_us}</h3>
               <div className="bg-secondary text-center" style={{ padding: 30 }}>
-                <p>
-                  Vero sea et accusam justo dolor accusam lorem consetetur, dolores sit amet sit dolor clita kasd justo, diam accusam no sea ut
-                  tempor magna takimata, amet sit et diam dolor ipsum amet diam
-                </p>
+                <p>{dict.blog_page.about_us_text}</p>
                 <a href="" className="btn btn-primary py-2 px-4">
-                  Read More
+                  {dict.blog_page.learn_more}
                 </a>
               </div>
             </div>
@@ -333,8 +357,3 @@ async function BlogPage({ params }: { params: { locale: Locale } }) {
 }
 
 export default BlogPage;
-
-
-export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}

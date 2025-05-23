@@ -14,24 +14,24 @@ import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 
 export const metadata: Metadata = {
-  title: "AirLogex | Reliable Courier & Logistics Services",
+  title: "AirMetriz | Reliable Courier & Logistics Services",
   description:
-    "AirLogex is your trusted courier and logistics partner. We deliver packages fast and securely across the country and internationally. Track, ship, and manage your deliveries with ease.",
-  keywords: ["courier", "logistics", "delivery", "shipping", "express delivery", "track packages", "international courier", "airlogex"],
-  authors: [{ name: "AirLogex", url: "https://airlogex.com" }],
-  creator: "AirLogex Team",
-  metadataBase: new URL("https://airlogex.com"),
+    "AirMetriz is your trusted courier and logistics partner. We deliver packages fast and securely across the country and internationally. Track, ship, and manage your deliveries with ease.",
+  keywords: ["courier", "logistics", "delivery", "shipping", "express delivery", "track packages", "international courier", "airmetriz"],
+  authors: [{ name: "AirMetriz", url: "https://airmetriz.com" }],
+  creator: "AirMetriz Team",
+  metadataBase: new URL("https://airmetriz.com"),
   openGraph: {
-    title: "AirLogex | Reliable Courier & Logistics Services",
-    description: "Fast and secure courier services. Track your shipments and manage logistics with AirLogex.",
-    url: "https://airlogex.com",
-    siteName: "AirLogex",
+    title: "AirMetriz | Reliable Courier & Logistics Services",
+    description: "Fast and secure courier services. Track your shipments and manage logistics with AirMetriz.",
+    url: "https://airmetriz.com",
+    siteName: "AirMetriz",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "AirLogex courier delivery service image",
+        alt: "AirMetriz courier delivery service image",
       },
     ],
     locale: "en_US",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AirLogex | Reliable Courier Services",
-    description: "Manage your shipments and track packages with AirLogex - trusted logistics solutions.",
-    creator: "@airlogex",
+    title: "AirMetriz | Reliable Courier Services",
+    description: "Manage your shipments and track packages with AirMetriz - trusted logistics solutions.",
+    creator: "@airmetriz",
     images: ["/og-image.jpg"],
   },
   icons: {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   alternates: {
-    canonical: "https://airlogex.com",
+    canonical: "https://airmetriz.com",
   },
 };
 
@@ -60,8 +60,7 @@ interface LayoutProps {
 }
 
 export default async function LocaleLayout({ children, params }: LayoutProps) {
-  
-  const {locale} = await params;
+  const { locale } = params;
   const dict = await getDictionary(locale);
 
   return (
@@ -73,14 +72,14 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
 
         {/* Load scripts */}
         <Script src="https://code.jquery.com/jquery-3.4.1.min.js" strategy="beforeInteractive" />
-        <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" strategy="lazyOnload" />
-        <Script src="/lib/easing/easing.min.js" strategy="lazyOnload" />
-        <Script src="/lib/waypoints/waypoints.min.js" strategy="lazyOnload" />
-        <Script src="/lib/counterup/counterup.min.js" strategy="lazyOnload" />
-        <Script src="/lib/owlcarousel/owl.carousel.min.js" strategy="lazyOnload" />
-        <Script src="/mail/jqBootstrapValidation.min.js" strategy="lazyOnload" />
-        <Script src="/mail/contact.js" strategy="lazyOnload" />
-        <Script src="/js/main.js" strategy="lazyOnload" />
+        <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
+        <Script src="/lib/easing/easing.min.js" strategy="afterInteractive" />
+        <Script src="/lib/waypoints/waypoints.min.js" strategy="afterInteractive" />
+        <Script src="/lib/counterup/counterup.min.js" strategy="afterInteractive" />
+        <Script src="/lib/owlcarousel/owl.carousel.min.js" strategy="afterInteractive" />
+        <Script src="/mail/jqBootstrapValidation.min.js" strategy="afterInteractive" />
+        <Script src="/mail/contact.js" strategy="afterInteractive" />
+        <Script src="/js/main.js" strategy="afterInteractive" />
       </body>
     </html>
   );

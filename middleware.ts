@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { defaultlocale, locales } from "./libs/i18n/config";
+import {  defaultLocale, locales } from "./libs/i18n/config";
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -7,7 +7,7 @@ export function middleware(request: NextRequest) {
   const ismissinglocale = locales.every((locale) => !pathname.startsWith(`/${locale}`));
   if (ismissinglocale) {
     const url = request.nextUrl.clone();
-    url.pathname = `${defaultlocale}${pathname}`;
+    url.pathname = `${defaultLocale}${pathname}`;
     return NextResponse.redirect(url);
   }
   return NextResponse.next();
