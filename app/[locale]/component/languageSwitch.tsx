@@ -35,15 +35,15 @@ export default function LanguageSwitch() {
   const currentLang = languageMap[curren] || { name: curren.toUpperCase(), flag: "" };
 
   return (
-    <div className="relative w-10 md:w-[200px]">
-      <div className="flex justify-center items-center gap-2 md:gap-5 p-3" onClick={() => close((prv) => !prv)}>
-        <i className="fa fa-globe" />
-        <span className="flex items-center gap-2">
+    <div className="fixed lg:relative w-auto h-screen w-screen lg:h-max z-50 top-[90vh] lg:top-0  ">
+      <div className="flex justify-center items-center gap-2 md:gap-5 p-2 bg-[#ff4800] lg:bg-transparent border shardow-lg lg:border-none" onClick={() => close((prv) => !prv)}>
+        <i className="fa fa-globe max-lg:text-white" />
+        <span className="flex items-center gap-2 ">
           {currentLang.flag && <Image src={currentLang.flag} alt={currentLang.name} width={24} height={16} />}
-          <span className="uppercase">{currentLang.name}</span>
+          <span className="uppercase max-lg:text-white ">{currentLang.name}</span>
         </span>
       </div>
-      <div className="absolute left-0 rigth-0 z-50 w-full ">
+      <div className="absolute -top-[50%] lg:top-[60px] left-0 md:rigth-0 z-10 w-[15rem]  ">
         {open && (
           <motion.div
             initial={{ height: 0 }}

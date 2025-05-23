@@ -13,7 +13,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
   const dict = await getDictionary(locale);
 
   return (
-    <div className="relative">
+    <div>
       <div className="jumbotron jumbotron-fluid mb-5">
         <div className="container text-center py-5">
           <h1 className="text-primary mb-4">{dict.hero.safeFaster}</h1>
