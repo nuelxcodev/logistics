@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "service": "服务",
+    "blog": "博客",
+    "contact": "联系",
+    "quote": "获取报价"
+  },
+  "hero": {
+    "safeFaster": "安全快捷",
+    "logisticsServices": "物流服务"
+  },
+  "about_us": {
+    "title": "关于我们",
+    "subTitle": "值得信赖且高效的物流服务提供商",
+    "mainText": "拥有25年以上经验，我们为现代企业提供可靠高效的物流解决方案。从准时交付到供应链优化，我们对速度、安全和客户满意度的承诺使我们在物流行业中脱颖而出。请放心将您的货物交给我们，我们将始终以精准和细致的态度运输。",
+    "button_text": "观看视频",
+    "years_experience": "25年以上经验"
+  },
+  "why_us_card": {
+    "title": "为什么选择我们",
+    "subtitle": "快速、安全、可靠的物流服务",
+    "maintext": "我们的物流服务旨在每一次都确保速度、安全和可靠。我们承诺更快的交付并保障您的包裹安全。无论是常规运输还是紧急配送，我们都拥有专业知识和技术，确保您的包裹每次都能准时送达。",
+    "list": {
+      "list1": "行业领先速度",
+      "list2": "安全可靠的操作",
+      "list3": "全天候客户支持"
+    }
+  },
+  "our_service": {
+    "title": "优质物流服务",
+    "service1": {
+      "title": "空运",
+      "descriptiom": "我们提供快速可靠的空运服务，确保您的货物能够安全、迅速地到达全球各地。"
+    },
+    "service2": {
+      "title": "海运",
+      "descriptiom": "我们的海运解决方案为大宗货物提供安全且经济的全球运输。"
+    },
+    "service3": {
+      "title": "陆运",
+      "descriptiom": "我们为区域和跨境运输提供可靠的陆运服务，确保货物准时安全送达。"
+    },
+    "service4": {
+      "title": "仓储服务",
+      "descriptiom": "我们的安全宽敞仓库为各种规模的货物提供灵活的仓储解决方案，配备完善的库存跟踪和高效操作。"
+    },
+    "blog": {
+      "section": "我们的博客",
+      "title": "最新博客资讯",
+      "author1": "约翰·多伊",
+      "category1": "物流",
+      "post1": {
+        "title": "物流的未来：创新与趋势",
+        "summary": "随着技术进步、自动化和数据分析，物流行业正在迅速发展。本文探讨了物流的未来，从AI驱动的追踪系统到无人机和自动驾驶车辆在配送服务中的兴起。了解这些创新如何改变货物流动并提升效率。"
+      },
+      "author2": "简·史密斯",
+      "category2": "配送服务",
+      "post2": {
+        "title": "如何确保安全准时的配送",
+        "summary": "在快节奏的物流行业，确保货物准时且完好无损地送达至关重要。本文介绍了从包装、路线规划到客户沟通的最佳实践。了解我们的配送专家如何保持行业最高标准。"
+      },
+      "readMore": "阅读更多"
+    },
+    "learn_more": "了解更多"
+  },
+  "blog_page": {
+    "title": "快递新闻与分析",
+    "breadcrumb_home": "首页",
+    "breadcrumb_blog": "博客",
+    "author": "AirMetriz团队",
+    "category": "物流",
+    "post1_title": "如何使用AirMetriz追踪您的包裹",
+    "post1_desc": "了解如何通过AirMetriz先进的追踪系统实时追踪您的货物。从取件到送达，随时掌握配送状态。",
+    "post2_title": "安全快速配送的5个建议",
+    "post2_desc": "了解确保包裹安全快速送达的关键建议。AirMetriz分享包装、标签和取件规划的最佳实践。",
+    "post3_title": "为什么选择AirMetriz进行国际运输？",
+    "post3_desc": "了解选择AirMetriz进行国际运输的优势。从清关到准时送达，我们简化全球物流。",
+    "read_more": "阅读更多",
+    "search_placeholder": "搜索博客...",
+    "categories": "分类",
+    "category_delivery": "配送",
+    "category_tracking": "追踪",
+    "category_logistics": "物流",
+    "category_tips": "运输建议",
+    "category_support": "客户支持",
+    "recent_posts": "最新文章",
+    "recent_post1": "如何使用AirMetriz追踪您的包裹",
+    "recent_post2": "安全快速配送的5个建议",
+    "recent_post3": "为什么选择AirMetriz进行国际运输？",
+    "tag_cloud": "标签云",
+    "tag_shipping": "运输",
+    "tag_tracking": "追踪",
+    "tag_logistics": "物流",
+    "tag_support": "支持",
+    "tag_delivery": "配送",
+    "tag_express": "快递",
+    "about_us": "关于AirMetriz",
+    "about_us_text": "AirMetriz致力于提供可靠、快速和安全的快递服务。我们通过创新的物流解决方案连接全球企业和个人。",
+    "learn_more": "了解更多"
+  },
+  "about": {
+    "headerTitle": "关于我们",
+    "breadcrumbHome": "首页",
+    "breadcrumbCurrent": "关于我们"
+  },
+  "footer": {
+    "summary": "获取最新资讯和优惠。订阅以接收分析、更新和特别促销，直达您的邮箱。",
+    "botton": "订阅",
+    "title": "订阅我们的新闻通讯",
+    "FQA": {
+      "reserve": "版权所有。",
+      "Design": "设计：",
+      "PrivacyPolicy": "隐私政策",
+      "terms": "使用条款",
+      "FAQS": "常见问题",
+      "suport": "支持"
+    }
+  }
+}

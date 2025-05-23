@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "service": "Dienstleistung",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "quote": "Angebot anfordern"
+  },
+  "hero": {
+    "safeFaster": "Sicher & Schnell",
+    "logisticsServices": "Logistikdienstleistungen"
+  },
+  "about_us": {
+    "title": "Über uns",
+    "subTitle": "Zuverlässiger und schneller Logistikdienstleister",
+    "mainText": "Mit über 25 Jahren Erfahrung bieten wir zuverlässige und effiziente Logistiklösungen, die auf die Bedürfnisse moderner Unternehmen zugeschnitten sind. Von pünktlicher Lieferung bis zur Optimierung der Lieferkette – unser Engagement für Schnelligkeit, Sicherheit und Kundenzufriedenheit hebt uns in der Logistikbranche hervor. Vertrauen Sie uns, Ihre Waren präzise und sorgfältig zu transportieren – jedes Mal.",
+    "button_text": "Video ansehen",
+    "years_experience": "25+ Jahre Erfahrung"
+  },
+  "why_us_card": {
+    "title": "Warum uns wählen",
+    "subtitle": "Schnelle, sichere und zuverlässige Logistikdienste",
+    "maintext": "Unsere Logistikdienste sind darauf ausgelegt, jederzeit Schnelligkeit, Sicherheit und Zuverlässigkeit zu gewährleisten. Wir sorgen für eine schnellere Lieferung mit Engagement für die Sicherheit Ihrer Pakete. Ob regelmäßiger Versand oder Expresslieferung – wir verfügen über das Know-how und die Technologie, damit Ihre Sendungen immer pünktlich ankommen.",
+    "list": {
+      "list1": "Branchenführende Geschwindigkeit",
+      "list2": "Sichere und geschützte Handhabung",
+      "list3": "Kundensupport rund um die Uhr"
+    }
+  },
+  "our_service": {
+    "title": "Beste Logistikdienste",
+    "service1": {
+      "title": "Luftfracht",
+      "descriptiom": "Wir bieten schnelle und zuverlässige Luftfrachtdienste, damit Ihre Waren international schnell und sicher ihr Ziel erreichen."
+    },
+    "service2": {
+      "title": "Seefracht",
+      "descriptiom": "Unsere Seefrachtlösungen bieten sicheren und kostengünstigen Transport für große Warenmengen auf globalen Seewegen."
+    },
+    "service3": {
+      "title": "Landtransport",
+      "descriptiom": "Wir bieten zuverlässige Landtransporte für regionale und grenzüberschreitende Lieferungen und sorgen für pünktliche und sichere Frachtbewegungen."
+    },
+    "service4": {
+      "title": "Warenlagerung",
+      "descriptiom": "Unsere sicheren und geräumigen Lager bieten flexible Lagerlösungen für Waren jeder Größe mit vollständiger Bestandsverfolgung und effizienter Handhabung."
+    },
+    "blog": {
+      "section": "Unser Blog",
+      "title": "Neueste Blognachrichten",
+      "author1": "John Doe",
+      "category1": "Logistik",
+      "post1": {
+        "title": "Die Zukunft der Logistik: Innovation und Trends",
+        "summary": "Die Logistikbranche entwickelt sich dank technologischer Fortschritte, Automatisierung und Datenanalyse rasant weiter. In diesem Artikel beleuchten wir die Zukunft der Logistik – von KI-gestütztem Tracking bis zum Einsatz von Drohnen und autonomen Fahrzeugen. Erfahren Sie, wie diese Innovationen die Warenmobilität verändern und die Effizienz steigern."
+      },
+      "author2": "Jane Smith",
+      "category2": "Lieferservice",
+      "post2": {
+        "title": "Wie Sie sichere und pünktliche Lieferungen gewährleisten",
+        "summary": "In der schnelllebigen Logistik ist es entscheidend, dass Waren pünktlich und unversehrt ankommen. Dieser Artikel zeigt Best Practices für sichere und pünktliche Lieferungen – von der Verpackung über die Routenplanung bis zur Kundenkommunikation. Erfahren Sie, wie unsere Experten höchste Branchenstandards einhalten."
+      },
+      "readMore": "Mehr erfahren"
+    },
+    "learn_more": "Mehr erfahren"
+  },
+  "blog_page": {
+    "title": "Nachrichten & Analysen zum Versand",
+    "breadcrumb_home": "Startseite",
+    "breadcrumb_blog": "Blog",
+    "author": "AirMetriz Team",
+    "category": "Logistik",
+    "post1_title": "So verfolgen Sie Ihr Paket mit AirMetriz",
+    "post1_desc": "Erfahren Sie, wie Sie Ihre Sendungen mit dem fortschrittlichen Tracking-System von AirMetriz in Echtzeit verfolgen können. Bleiben Sie über den Status Ihrer Lieferung vom Abholen bis zur Zustellung informiert.",
+    "post2_title": "5 Tipps für schnelle und sichere Lieferungen",
+    "post2_desc": "Entdecken Sie wichtige Tipps, um sicherzustellen, dass Ihre Pakete schnell und sicher geliefert werden. AirMetriz teilt Best Practices für Verpackung, Etikettierung und Abholplanung.",
+    "post3_title": "Warum AirMetriz für internationale Sendungen wählen?",
+    "post3_desc": "Erfahren Sie die Vorteile des internationalen Versands mit AirMetriz. Von der Zollabfertigung bis zur pünktlichen Lieferung – wir vereinfachen die globale Logistik.",
+    "read_more": "Mehr erfahren",
+    "search_placeholder": "Im Blog suchen...",
+    "categories": "Kategorien",
+    "category_delivery": "Lieferung",
+    "category_tracking": "Sendungsverfolgung",
+    "category_logistics": "Logistik",
+    "category_tips": "Versandtipps",
+    "category_support": "Kundensupport",
+    "recent_posts": "Neueste Beiträge",
+    "recent_post1": "So verfolgen Sie Ihr Paket mit AirMetriz",
+    "recent_post2": "5 Tipps für schnelle und sichere Lieferungen",
+    "recent_post3": "Warum AirMetriz für internationale Sendungen wählen?",
+    "tag_cloud": "Schlagwortwolke",
+    "tag_shipping": "Versand",
+    "tag_tracking": "Sendungsverfolgung",
+    "tag_logistics": "Logistik",
+    "tag_support": "Support",
+    "tag_delivery": "Lieferung",
+    "tag_express": "Express",
+    "about_us": "Über AirMetriz",
+    "about_us_text": "AirMetriz verpflichtet sich, zuverlässige, schnelle und sichere Kurierdienste anzubieten. Wir verbinden Unternehmen und Privatpersonen weltweit mit unseren innovativen Logistiklösungen.",
+    "learn_more": "Mehr erfahren"
+  },
+  "about": {
+    "headerTitle": "Über uns",
+    "breadcrumbHome": "Startseite",
+    "breadcrumbCurrent": "Über uns"
+  },
+  "footer": {
+    "summary": "Bleiben Sie über die neuesten Nachrichten und Angebote informiert. Abonnieren Sie unseren Newsletter für Analysen, Updates und exklusive Aktionen direkt in Ihrem Posteingang.",
+    "botton": "Abonnieren",
+    "title": "Abonnieren Sie unseren Newsletter",
+    "FQA": {
+      "reserve": "Alle Rechte vorbehalten.",
+      "Design": "Entworfen von",
+      "PrivacyPolicy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen",
+      "FAQS": "FAQ",
+      "suport": "Support"
+    }
+  }
+}

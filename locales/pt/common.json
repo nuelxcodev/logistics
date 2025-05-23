@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "service": "Serviço",
+    "blog": "Blog",
+    "contact": "Contato",
+    "quote": "Solicitar orçamento"
+  },
+  "hero": {
+    "safeFaster": "Seguro e Rápido",
+    "logisticsServices": "Serviços Logísticos"
+  },
+  "about_us": {
+    "title": "Sobre nós",
+    "subTitle": "Fornecedor de serviços logísticos confiável e rápido",
+    "mainText": "Com mais de 25 anos de experiência, oferecemos soluções logísticas confiáveis e eficientes, adaptadas às necessidades das empresas modernas. Da entrega pontual à otimização da cadeia de suprimentos, nosso compromisso com rapidez, segurança e satisfação do cliente nos destaca no setor logístico. Confie em nós para transportar suas mercadorias com precisão e cuidado — sempre.",
+    "button_text": "Assistir vídeo",
+    "years_experience": "Mais de 25 anos de experiência"
+  },
+  "why_us_card": {
+    "title": "Por que nos escolher",
+    "subtitle": "Serviços logísticos rápidos, seguros e confiáveis",
+    "maintext": "Nossos serviços logísticos são projetados para garantir rapidez, segurança e confiabilidade sempre. Garantimos uma entrega mais rápida com compromisso com a segurança dos seus pacotes. Seja um envio regular ou uma entrega urgente, temos a experiência e tecnologia necessárias para que seus pacotes cheguem no prazo, sempre.",
+    "list": {
+      "list1": "Velocidade líder no setor",
+      "list2": "Manuseio seguro e protegido",
+      "list3": "Atendimento ao cliente 24/7"
+    }
+  },
+  "our_service": {
+    "title": "Melhores serviços logísticos",
+    "service1": {
+      "title": "Carga aérea",
+      "descriptiom": "Oferecemos serviços de carga aérea rápidos e confiáveis, garantindo que suas mercadorias cheguem ao destino rapidamente e com segurança internacionalmente."
+    },
+    "service2": {
+      "title": "Carga marítima",
+      "descriptiom": "Nossas soluções de carga marítima oferecem transporte seguro e econômico para grandes volumes de mercadorias em rotas marítimas globais."
+    },
+    "service3": {
+      "title": "Transporte terrestre",
+      "descriptiom": "Oferecemos serviços de transporte rodoviário confiáveis para entregas regionais e transfronteiriças, garantindo movimentação pontual e segura da carga."
+    },
+    "service4": {
+      "title": "Armazenamento de mercadorias",
+      "descriptiom": "Nossos armazéns seguros e espaçosos oferecem soluções de armazenamento flexíveis para mercadorias de todos os tamanhos, com rastreamento completo de estoque e manuseio eficiente."
+    },
+    "blog": {
+      "section": "Nosso Blog",
+      "title": "Últimas notícias do blog",
+      "author1": "John Doe",
+      "category1": "Logística",
+      "post1": {
+        "title": "O futuro da logística: Inovação e tendências",
+        "summary": "O setor logístico está evoluindo rapidamente graças aos avanços tecnológicos, automação e análise de dados. Neste artigo, exploramos o futuro da logística, desde sistemas de rastreamento com IA até o crescimento de drones e veículos autônomos nos serviços de entrega. Descubra como essas inovações estão transformando a mobilidade de mercadorias e aumentando a eficiência."
+      },
+      "author2": "Jane Smith",
+      "category2": "Serviços de entrega",
+      "post2": {
+        "title": "Como garantir entregas seguras e pontuais",
+        "summary": "No mundo acelerado da logística, garantir que as mercadorias sejam entregues no prazo e em perfeito estado é prioridade. Este artigo apresenta as melhores práticas para entregas seguras e pontuais, do empacotamento ao planejamento de rotas e comunicação com clientes. Descubra como nossos especialistas mantêm os mais altos padrões do setor."
+      },
+      "readMore": "Leia mais"
+    },
+    "learn_more": "Saiba mais"
+  },
+  "blog_page": {
+    "title": "Notícias e Análises de Envio",
+    "breadcrumb_home": "Início",
+    "breadcrumb_blog": "Blog",
+    "author": "Equipe AirMetriz",
+    "category": "Logística",
+    "post1_title": "Como rastrear seu pacote com a AirMetriz",
+    "post1_desc": "Descubra como rastrear facilmente seus envios em tempo real com o sistema avançado de rastreamento da AirMetriz. Fique informado sobre o status da sua entrega do recolhimento à entrega.",
+    "post2_title": "5 dicas para uma entrega rápida e segura",
+    "post2_desc": "Descubra dicas essenciais para garantir que seus pacotes sejam entregues de forma rápida e segura. A AirMetriz compartilha as melhores práticas em empacotamento, etiquetagem e planejamento de coletas.",
+    "post3_title": "Por que escolher a AirMetriz para envios internacionais?",
+    "post3_desc": "Descubra os benefícios de enviar internacionalmente com a AirMetriz. Do desembaraço aduaneiro à entrega pontual, simplificamos a logística global.",
+    "read_more": "Leia mais",
+    "search_placeholder": "Pesquisar no blog...",
+    "categories": "Categorias",
+    "category_delivery": "Entrega",
+    "category_tracking": "Rastreamento",
+    "category_logistics": "Logística",
+    "category_tips": "Dicas de envio",
+    "category_support": "Suporte ao cliente",
+    "recent_posts": "Artigos recentes",
+    "recent_post1": "Como rastrear seu pacote com a AirMetriz",
+    "recent_post2": "5 dicas para uma entrega rápida e segura",
+    "recent_post3": "Por que escolher a AirMetriz para envios internacionais?",
+    "tag_cloud": "Nuvem de tags",
+    "tag_shipping": "Envio",
+    "tag_tracking": "Rastreamento",
+    "tag_logistics": "Logística",
+    "tag_support": "Suporte",
+    "tag_delivery": "Entrega",
+    "tag_express": "Expresso",
+    "about_us": "Sobre a AirMetriz",
+    "about_us_text": "A AirMetriz está comprometida em fornecer serviços de courier confiáveis, rápidos e seguros. Conectamos empresas e pessoas em todo o mundo com nossas soluções logísticas inovadoras.",
+    "learn_more": "Saiba mais"
+  },
+  "about": {
+    "headerTitle": "Sobre",
+    "breadcrumbHome": "Início",
+    "breadcrumbCurrent": "Sobre"
+  },
+  "footer": {
+    "summary": "Fique informado sobre as últimas notícias e ofertas. Inscreva-se para receber análises, atualizações e promoções especiais diretamente na sua caixa de entrada.",
+    "botton": "Inscrever-se",
+    "title": "Inscreva-se na nossa newsletter",
+    "FQA": {
+      "reserve": "Todos os direitos reservados.",
+      "Design": "Desenvolvido por",
+      "PrivacyPolicy": "Política de privacidade",
+      "terms": "Termos de uso",
+      "FAQS": "Perguntas frequentes",
+      "suport": "suporte"
+    }
+  }
+}

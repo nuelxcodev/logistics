@@ -1,16 +1,18 @@
 import { getDictionary } from "@/libs/i18n/getDictionary";
-import { locales, type Locale } from "@/libs/i18n/config";
+import { type Locale, locales } from "@/libs/i18n/config";
 import AboutUscard from "../component/ui/AboutUscard";
 import WhyUscard from "../component/ui/WhyUscard";
 
+
+// Fix: params.locale should be string
 type PageProps = {
   params: {
-    locale: Locale;
+    locale: string;
   };
 };
 
 export default async function AboutPage({ params }: PageProps) {
-  const dict = await getDictionary(params.locale);
+  const dict = await getDictionary(params.locale as Locale);
 
   return (
     <>
@@ -47,5 +49,6 @@ export default async function AboutPage({ params }: PageProps) {
 }
 
 export async function generateStaticParams() {
+  // Return array of objects with locale as string
   return locales.map((locale) => ({ locale }));
 }

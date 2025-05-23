@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "service": "Servizio",
+    "blog": "Blog",
+    "contact": "Contatto",
+    "quote": "Richiedi preventivo"
+  },
+  "hero": {
+    "safeFaster": "Sicuro e Veloce",
+    "logisticsServices": "Servizi Logistici"
+  },
+  "about_us": {
+    "title": "Chi siamo",
+    "subTitle": "Fornitore di servizi logistici affidabile e veloce",
+    "mainText": "Con oltre 25 anni di esperienza, offriamo soluzioni logistiche affidabili ed efficienti, adattate alle esigenze delle aziende moderne. Dalla consegna puntuale all'ottimizzazione della supply chain, il nostro impegno per la rapidità, la sicurezza e la soddisfazione del cliente ci distingue nel settore. Affidati a noi per trasportare le tue merci con precisione e cura, ogni volta.",
+    "button_text": "Guarda il video",
+    "years_experience": "Oltre 25 anni di esperienza"
+  },
+  "why_us_card": {
+    "title": "Perché sceglierci",
+    "subtitle": "Servizi logistici rapidi, sicuri e affidabili",
+    "maintext": "I nostri servizi logistici sono progettati per garantire rapidità, sicurezza e affidabilità ogni volta. Garantiamo una consegna più rapida con un impegno per la sicurezza dei tuoi pacchi. Che si tratti di una spedizione regolare o urgente, abbiamo l'esperienza e la tecnologia per far arrivare i tuoi pacchi puntuali, sempre.",
+    "list": {
+      "list1": "Velocità leader nel settore",
+      "list2": "Gestione sicura e protetta",
+      "list3": "Assistenza clienti 24/7"
+    }
+  },
+  "our_service": {
+    "title": "I migliori servizi logistici",
+    "service1": {
+      "title": "Trasporto aereo",
+      "descriptiom": "Offriamo servizi di trasporto aereo rapidi e affidabili, garantendo che le tue merci arrivino rapidamente e in sicurezza a livello internazionale."
+    },
+    "service2": {
+      "title": "Trasporto marittimo",
+      "descriptiom": "Le nostre soluzioni di trasporto marittimo offrono un trasporto sicuro ed economico per grandi volumi di merci sulle rotte globali."
+    },
+    "service3": {
+      "title": "Trasporto terrestre",
+      "descriptiom": "Forniamo servizi di trasporto su strada affidabili per consegne regionali e transfrontaliere, garantendo uno spostamento puntuale e sicuro delle merci."
+    },
+    "service4": {
+      "title": "Magazzinaggio",
+      "descriptiom": "I nostri magazzini sicuri e spaziosi offrono soluzioni di stoccaggio flessibili per merci di tutte le dimensioni, con monitoraggio completo dell'inventario e gestione efficiente."
+    },
+    "blog": {
+      "section": "Il nostro Blog",
+      "title": "Ultime notizie dal blog",
+      "author1": "John Doe",
+      "category1": "Logistica",
+      "post1": {
+        "title": "Il futuro della logistica: innovazione e tendenze",
+        "summary": "Il settore logistico sta evolvendo rapidamente grazie ai progressi tecnologici, all'automazione e all'analisi dei dati. In questo articolo esploriamo il futuro della logistica, dai sistemi di tracciamento basati su IA all'ascesa di droni e veicoli autonomi nei servizi di consegna. Scopri come queste innovazioni stanno trasformando la mobilità delle merci e migliorando l'efficienza."
+      },
+      "author2": "Jane Smith",
+      "category2": "Servizi di consegna",
+      "post2": {
+        "title": "Come garantire consegne sicure e puntuali",
+        "summary": "Nel mondo frenetico della logistica, garantire che le merci vengano consegnate in tempo e in perfette condizioni è una priorità. Questo articolo presenta le migliori pratiche per consegne sicure e puntuali, dall'imballaggio alla pianificazione dei percorsi e alla comunicazione con i clienti. Scopri come i nostri esperti mantengono i più alti standard del settore."
+      },
+      "readMore": "Leggi di più"
+    },
+    "learn_more": "Scopri di più"
+  },
+  "blog_page": {
+    "title": "Notizie e Analisi sulla Spedizione",
+    "breadcrumb_home": "Home",
+    "breadcrumb_blog": "Blog",
+    "author": "Team AirMetriz",
+    "category": "Logistica",
+    "post1_title": "Come tracciare il tuo pacco con AirMetriz",
+    "post1_desc": "Scopri come tracciare facilmente le tue spedizioni in tempo reale con il sistema avanzato di tracciamento di AirMetriz. Rimani informato sullo stato della tua consegna dal ritiro alla consegna.",
+    "post2_title": "5 consigli per una consegna rapida e sicura",
+    "post2_desc": "Scopri consigli essenziali per garantire che i tuoi pacchi vengano consegnati rapidamente e in sicurezza. AirMetriz condivide le migliori pratiche per imballaggio, etichettatura e pianificazione dei ritiri.",
+    "post3_title": "Perché scegliere AirMetriz per le spedizioni internazionali?",
+    "post3_desc": "Scopri i vantaggi di spedire a livello internazionale con AirMetriz. Dallo sdoganamento alla consegna puntuale, semplifichiamo la logistica globale.",
+    "read_more": "Leggi di più",
+    "search_placeholder": "Cerca nel blog...",
+    "categories": "Categorie",
+    "category_delivery": "Consegna",
+    "category_tracking": "Tracciamento",
+    "category_logistics": "Logistica",
+    "category_tips": "Consigli di spedizione",
+    "category_support": "Assistenza clienti",
+    "recent_posts": "Articoli recenti",
+    "recent_post1": "Come tracciare il tuo pacco con AirMetriz",
+    "recent_post2": "5 consigli per una consegna rapida e sicura",
+    "recent_post3": "Perché scegliere AirMetriz per le spedizioni internazionali?",
+    "tag_cloud": "Tag cloud",
+    "tag_shipping": "Spedizione",
+    "tag_tracking": "Tracciamento",
+    "tag_logistics": "Logistica",
+    "tag_support": "Supporto",
+    "tag_delivery": "Consegna",
+    "tag_express": "Espresso",
+    "about_us": "Su AirMetriz",
+    "about_us_text": "AirMetriz si impegna a fornire servizi di corriere affidabili, rapidi e sicuri. Colleghiamo aziende e privati in tutto il mondo grazie alle nostre soluzioni logistiche innovative.",
+    "learn_more": "Scopri di più"
+  },
+  "about": {
+    "headerTitle": "Chi siamo",
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "Chi siamo"
+  },
+  "footer": {
+    "summary": "Rimani aggiornato sulle ultime novità e offerte. Iscriviti per ricevere analisi, aggiornamenti e promozioni speciali direttamente nella tua casella di posta.",
+    "botton": "Iscriviti",
+    "title": "Iscriviti alla nostra newsletter",
+    "FQA": {
+      "reserve": "Tutti i diritti riservati.",
+      "Design": "Progettato da",
+      "PrivacyPolicy": "Informativa sulla privacy",
+      "terms": "Termini di utilizzo",
+      "FAQS": "FAQ",
+      "suport": "supporto"
+    }
+  }
+}
