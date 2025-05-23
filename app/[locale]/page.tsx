@@ -6,9 +6,10 @@ import Services from "./component/ui/Services";
 import WhyUscard from "./component/ui/WhyUscard";
 import { getDictionary } from "@/libs/i18n/getDictionary";
 import TrackingForm from "./component/TrackingForm";
+import Image from "next/image"; // Added import
 
-export default async function Home({ params }: { params: { locale: Locale } }) {
-   const {locale} =  params;
+export default async function Home({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
   const dict = await getDictionary(locale);
 
   return (
@@ -40,7 +41,7 @@ export default async function Home({ params }: { params: { locale: Locale } }) {
           <div className="row">
             <div className="col-md-6 mb-5">
               <div className="position-relative">
-                <img className="img-fluid w-100" src="../img/blog-1.jpg" alt="Blog Post 1" />
+                <Image className="img-fluid w-100" src="/img/blog-1.jpg" alt="Blog Post 1" width={750} height={400} />
                 <div
                   className="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
                   style={{ width: 60, height: 60, bottom: "-30px", right: 30 }}
@@ -52,7 +53,14 @@ export default async function Home({ params }: { params: { locale: Locale } }) {
               <div className="bg-secondary" style={{ padding: 30 }}>
                 <div className="d-flex mb-3">
                   <div className="d-flex align-items-center">
-                    <img className="rounded-circle" style={{ width: 40, height: 40 }} src="img/user.jpg" alt={dict.our_service.blog.author1} />
+                    <Image
+                      className="rounded-circle"
+                      style={{ width: 40, height: 40 }}
+                      src="/img/user.jpg"
+                      alt={dict.our_service.blog.author1}
+                      width={40}
+                      height={40}
+                    />
                     <a className="text-muted ml-2" href="">
                       {dict.our_service.blog.author1}
                     </a>
@@ -73,7 +81,7 @@ export default async function Home({ params }: { params: { locale: Locale } }) {
             </div>
             <div className="col-md-6 mb-5">
               <div className="position-relative">
-                <img className="img-fluid w-100" src="img/blog-2.jpg" alt="Blog Post 2" />
+                <Image className="img-fluid w-100" src="/img/blog-2.jpg" alt="Blog Post 2" width={750} height={400} />
                 <div
                   className="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
                   style={{ width: 60, height: 60, bottom: "-30px", right: 30 }}
@@ -85,7 +93,14 @@ export default async function Home({ params }: { params: { locale: Locale } }) {
               <div className="bg-secondary" style={{ padding: 30 }}>
                 <div className="d-flex mb-3">
                   <div className="d-flex align-items-center">
-                    <img className="rounded-circle" style={{ width: 40, height: 40 }} src="./img/user.jpg" alt={dict.our_service.blog.author2} />
+                    <Image
+                      className="rounded-circle"
+                      style={{ width: 40, height: 40 }}
+                      src="/img/user.jpg"
+                      alt={dict.our_service.blog.author2}
+                      width={40}
+                      height={40}
+                    />
                     <a className="text-muted ml-2" href="">
                       {dict.our_service.blog.author2}
                     </a>

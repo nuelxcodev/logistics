@@ -56,11 +56,11 @@ export const metadata: Metadata = {
 
 interface LayoutProps {
   children: ReactNode;
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }
 
 export default async function LocaleLayout({ children, params }: LayoutProps) {
-  const { locale } = params;
+  const { locale } = await params;
   const dict = await getDictionary(locale);
 
   return (

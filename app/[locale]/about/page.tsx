@@ -4,16 +4,10 @@ import AboutUscard from "../component/ui/AboutUscard";
 import WhyUscard from "../component/ui/WhyUscard";
 
 
-// Fix: params.locale should be string
-type PageProps = {
-  params: {
-    locale: string;
-  };
-};
 
-export default async function AboutPage({ params }: PageProps) {
-  const dict = await getDictionary(params.locale as Locale);
-
+export default async function AboutPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
+  const dict = await getDictionary(locale);
   return (
     <>
       {/* Header Start */}

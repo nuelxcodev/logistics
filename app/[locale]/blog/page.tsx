@@ -2,8 +2,8 @@ import type { Locale } from "@/libs/i18n/config";
 import { getDictionary } from "@/libs/i18n/getDictionary";
 import Image from "next/image";
 
-async function BlogPage({ params }: { params: { locale: Locale } }) {
-  const { locale } = params;
+async function BlogPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
   const dict = await getDictionary(locale);
 
   return (
